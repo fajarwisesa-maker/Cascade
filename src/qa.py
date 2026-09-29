@@ -56,6 +56,26 @@ PROTECTION_REMOVAL = re.compile(
     r"\b(remove|break|cut|lepas\w*|open)\b[^.?!]{0,25}\bcar[- ]?seal|"
     r"\bblock[- ]?in\b[^.?!]{0,25}\b(psv|relief)|\bisolate\b[^.?!]{0,25}\b(psv|relief valve)", re.I)
 NEGATED = re.compile(r"\b(won'?t|will not|do not|don'?t|never|not going to|tidak|tanpa)\s+(\w+\s+){0,2}$", re.I)
+# FAIL-CLOSED safeguard gate (held-out #4). Any modification verb, English or
+# Indonesian, aimed at anything the C&E data marks as a safeguard is a
+# deviation unless the sentence is plainly an information question.
+MODIFY_VERB = re.compile(
+    r"\b(change|raise|increase|lower|decrease|adjust|modify|disable|deactivate|remove|silence|mute|"
+    r"suppress|inhibit|bypass|by-pass|defeat|override|jumper|block[- ]?in|turn off|switch off|"
+    r"ubah|naikkan|turunkan|matikan|nonaktifkan|hilangkan|lepas\w*|jadi \d)\b"
+    r"|\bset\b[^.?!]{0,30}\bto \d", re.I)
+# Running against an explicit written prohibition (OPL-GA-1201A-04: "Never run
+# the pump against a closed discharge") is a deviation too.
+PROHIBITED_OPERATION = re.compile(
+    r"\bclos\w*\b[^.?!]{0,30}\b(xv-\d+|discharge)\b[^.?!]{0,40}\b(run|running|keep)\b|"
+    r"\b(run|running)\b[^.?!]{0,30}\bagainst (a )?closed", re.I)
+IDIOM_NOT_MODIFY = re.compile(r"\b(raises?|raised) (an|the) alarm\b|\balarm (is )?raised\b", re.I)
+INFO_QUESTION = re.compile(r"^\s*(why|what|when|which|who|how does|how did|does|did|is|was|explain|"
+                           r"kenapa|mengapa|apa|kapan|siapa)\b", re.I)
+ACTION_ASK = re.compile(r"\b(can (i|we)|could (i|we)|should (i|we)|how (do|can|to|should) (i|we)?|"
+                        r"let'?s|please|boleh|bisa|gimana cara|bagaimana cara|tolong)\b|\bto \d|\bjadi \d", re.I)
+SAFEGUARD_WORDS = re.compile(r"\b(interlock|trip\w*|alarm|psv|relief|car[- ]?seal|auto[- ]?start|"
+                             r"standby (pump )?start|permissive|sis|esd|shutdown logic)\b", re.I)
 # Asking CASCADE to judge a live condition. It never does.
 JUDGEMENT_CUE = re.compile(r"\b(is it safe|safe to|still safe|ok to (run|continue|keep)|"
                            r"can i keep (it )?running|keep running|aman( tidak)?|masih aman|boleh jalan)\b", re.I)
@@ -214,6 +234,35 @@ class Engine:
                 tags.add(il["logic_no"].upper())
         return tags
 
+    def safeguard_everything(self) -> set[str]:
+        """Initiators PLUS what they act on: effect final elements (XV-1201,
+        FV-1201, standby GA-1201B, TV-5602, PSV-5607) and permissive signals.
+        Disabling the thing a trip actuates defeats the trip just as well."""
+        tags = set(self.safeguard_tags())
+        for il in self.il.values():
+            for eff in il["effects"].values():
+                tags |= {f"{p.upper()}-{n.upper()}" for p, n in TAG_RE.findall(eff)}
+            for p in il["permissives"]:
+                tags |= {f"{a.upper()}-{b.upper()}" for a, b in TAG_RE.findall(p["signal"])}
+        # The EQUIPMENT is not the safeguard: "TRIP PUMP MOTOR GA-1201A" names
+        # the pump, and maintenance on the pump is legitimate. The standby's
+        # auto-start is caught by SAFEGUARD_WORDS ("auto-start") instead.
+        equipment = set(self.assets) | {"GA-1201B"}
+        return tags - equipment
+
+    def modifies_safeguard(self, q: str) -> bool:
+        named = {f"{p.upper()}-{n.upper()}" for p, n in TAG_RE.findall(q)}
+        touches = bool(named & self.safeguard_everything()) or bool(SAFEGUARD_WORDS.search(q))
+        if not touches:
+            return False
+        cleaned = IDIOM_NOT_MODIFY.sub(" ", q)
+        if not self._unnegated(MODIFY_VERB, cleaned):
+            return False
+        # "why did the trip setting change?" is information; "can we lower it" is a request
+        if INFO_QUESTION.search(q) and not ACTION_ASK.search(q):
+            return False
+        return True
+
     @staticmethod
     def _unnegated(pat: re.Pattern, q: str) -> bool:
         """True if the pattern occurs at least once WITHOUT a negation just
@@ -225,7 +274,8 @@ class Engine:
         guarded = bool(re.search(r"interlock|trip|alarm|safety|sis|permissive|min-?flow|psv|relief", q, re.I)
                        or named & self.safeguard_tags())
         if (self._unnegated(DEVIATION, q) and guarded) or self._unnegated(PROTECTION_REMOVAL, q) \
-                or (self._unnegated(SETPOINT_CHANGE, q) and guarded):
+                or (self._unnegated(SETPOINT_CHANGE, q) and guarded) or self.modifies_safeguard(q) \
+                or self._unnegated(PROHIBITED_OPERATION, q):
             return "DEVIATION"
         if JUDGEMENT_CUE.search(q):
             return "JUDGEMENT"
@@ -255,7 +305,8 @@ class Engine:
             flags.append("trip / shutdown")
         if intent == "JUDGEMENT":
             flags.append("live-condition judgement requested")
-        if intent == "DEVIATION" and (SETPOINT_CHANGE.search(q) or PROTECTION_REMOVAL.search(q)):
+        if intent == "DEVIATION" and (SETPOINT_CHANGE.search(q) or PROTECTION_REMOVAL.search(q)
+                                      or MODIFY_VERB.search(q)):
             flags.append("change to a protective setting / device")
         return flags
 
@@ -436,8 +487,50 @@ class Engine:
                        [Item(x, []) for x in items])
 
     # ------------------------------------------------------------- intents
+    # Component / failure vocabulary a question can focus on (held-out #4: a
+    # steam-trap question was answered with the unrelated fouling chain).
+    FOCUS = {"steam trap": ["steam trap", "trap"], "coupling": ["coupling"], "bearing": ["bearing"],
+             "mechanical seal": ["seal", "gland", "flush"], "tube": ["tube"], "gasket": ["gasket"],
+             "grout / baseplate": ["grout", "baseplate", "foundation"], "impulse line": ["impulse"],
+             "motor": ["motor", "insulation"], "gauge glass": ["gauge glass", "sight glass", "glass"],
+             "control valve": ["tv-5602", "control valve", "loop"], "psv": ["psv"],
+             "alignment": ["align"], "lubrication": ["oil", "lube", "lubrication"]}
+
+    def focus_of(self, q: str) -> tuple[str, list[str]] | None:
+        ql = q.lower()
+        for name, terms in self.FOCUS.items():
+            if any(re.search(rf"\b{re.escape(t)}", ql) for t in terms):
+                return name, terms
+        return None
+
     def a_recurring(self, q, tag, E, S):
         chains = self.chains_for(tag)
+        focus = self.focus_of(q)
+        if focus:
+            name, terms = focus
+            def involves(c):
+                blob = " ".join(f"{e['problem']} {e['root_cause']} {e['action']}" for e in c["events"]).lower()
+                return any(t in blob for t in terms)
+            chains = [c for c in chains if involves(c)]
+            if not chains:
+                # Say plainly that no pattern exists, then show the record.
+                hist = [r for r in self.recs if r["tag"] == tag and r["cause_recorded"]
+                        and any(t in f"{r['problem']} {r['root_cause']} {r['action']}".lower() for t in terms)]
+                if not hist:
+                    return "no_chain"
+                sec = Section("history", f"No recurring failure chain on {tag} involves the {name}",
+                              note=f"{len(hist)} recorded occurrence(s) with a root cause")
+                for r in hist:
+                    weid = self.ev_wo(E, r["wo"])
+                    extra = f", Rp {r['cost_idr']:,.0f}" if r.get("cost_idr") else ""
+                    sec.items.append(Item(f"{r['date'][:10]} · {r['wo']} · {r['problem']} — root cause: "
+                                          f"{r['root_cause']}{extra}", [weid]))
+                S.append(sec)
+                opl_no = next((o["opl_no"] for o in self.opl.values() if o["asset_tag"] == tag
+                               and any(t in o["title"].lower() for t in terms)), None) or self.best_opl(tag, q)
+                if opl_no:
+                    S.append(self.steps_section(E, opl_no, "Approved check (verbatim)"))
+                return None
         if not chains:
             return "no_chain"
         for ch in chains:
@@ -727,7 +820,7 @@ class Engine:
         return None
 
     GUARD_TEXT = re.compile(r"defeat|bypass|override|never block|car-sealed|car seal|never isolat|"
-                            r"without an authori[sz]ed", re.I)
+                            r"without an authori[sz]ed|never run the pump against", re.I)
 
     def a_deviation(self, q, tag, E, S):
         named = {f"{p.upper()}-{n.upper()}" for p, n in TAG_RE.findall(q)}
@@ -743,6 +836,11 @@ class Engine:
             for s in o["safety"]:
                 if re.search(r"defeat|override", s, re.I):
                     cands.append((2, o["opl_no"], "2. SAFETY PRECAUTIONS", s))
+            # the explicit prohibition may sit in the key learning points
+            if PROHIBITED_OPERATION.search(q):
+                for s in o["key_learning"]:
+                    if re.search(r"never run the pump against", s, re.I):
+                        cands.append((-1, o["opl_no"], "6. KEY LEARNING POINTS", s))
         seen = set()
         for _, opl_no, loc, text in sorted(cands):
             if ws(text) in seen or len(sec.items) >= 3:
@@ -752,7 +850,7 @@ class Engine:
         S.append(sec)
         # A set-point change request: show the APPROVED value, unchanged.
         il = self.il.get(tag)
-        if il and SETPOINT_CHANGE.search(q):
+        if il and (SETPOINT_CHANGE.search(q) or re.search(r"set ?point|setting|jadi \d|to \d", q, re.I)):
             rows = [c for c in il["causes"] if c["tag"] in named]
             if rows:
                 cur = Section("parameter", "Approved set point — changing it requires Management of Change")
@@ -1056,6 +1154,8 @@ class Engine:
         if status == "sources_only":
             return f"No direct answer for {tag}; closest approved sources listed, no recommendation made."
         chains = [s for s in S if s.kind == "chain"]
+        if intent == "RECURRING" and not chains and any(s.kind == "history" for s in S):
+            return next(s.title for s in S if s.kind == "history") + "; the recorded occurrences are listed."
         if intent == "RECURRING" and chains:
             return (f"{tag} has {len(chains)} open failure chain(s); the largest is "
                     f"{chains[0].title.split(': ', 1)[1]}.")
@@ -1072,7 +1172,7 @@ class Engine:
             return f"Values below are quoted from the controlled documents for {tag}."
         if intent == "DEVIATION":
             if any(s.kind == "parameter" for s in S):
-                return ("Refused: changing a trip set point requires Management of Change. "
+                return ("Refused: changing a protective set point requires Management of Change. "
                         "The approved value is shown unchanged; escalation below.")
             return "Refused: CASCADE never advises defeating, bypassing or removing a safeguard. Escalation below."
         if intent == "JUDGEMENT":
