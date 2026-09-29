@@ -83,3 +83,21 @@ permanent regression tests; after the fixes every round passes with 0 serious.
 
 P&IDs are raster PNG with no tag list → no drawing tag extraction. No live historian → every
 condition-dependent answer says so and is capped. Six of eight assets have work orders only.
+
+## Browser prototype (`web/`)
+
+The submitted prototype is one static HTML page. It runs a JavaScript port of the
+Q&A engine against a data bundle exported from the Python pipeline; nothing is
+sent to a server and no answer is pre-written.
+
+```bash
+python3 web/export_bundle.py      # Python artefacts -> web/bundle.json
+python3 web/parity_questions.py   # 467 questions: every test question + a generated grid
+python3 web/parity.py             # JS vs Python: must print PARITY: IDENTICAL
+python3 web/build.py              # -> web/dist/cascade.html (single file, ~510 KB)
+```
+
+Parity at the time of submission: 467/467 identical answers, 1,800/1,800 identical
+retrieval rankings. The harness was mutation-tested: every behaviour-changing mutant
+of the JS engine was detected. Any change to `src/` must be followed by
+export → parity → build, and is not shippable unless parity is identical.
