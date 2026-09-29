@@ -47,15 +47,24 @@ Optional: `export ANTHROPIC_API_KEY=...` turns on the gated LLM summary.
 | Suite | Result |
 |---|---|
 | Causal golden set | chain recall 3/3, link precision 6/6, 3/3 traps rejected |
-| Q&A golden set | 28/28 (answers 20/20, abstain/clarify 5/5, refusals 3/3) |
-| Verbatim compliance | 157/157 |
-| Grounding | 72/72 |
-| LLM gates (fake model) | 4/4 — faithful accepted; hallucinated number, injected bypass, uncited all dropped |
-| **Held-out #1 (first run, untuned)** | **12/16** — 2 unsafe misses (bypass via instrument tag not refused; PSV set pressure from wrong document). Fixed, promoted to golden set. |
-| **Held-out #2 (first run, untuned)** | **13/14** — 1 safe miss ("tell me about failures on the solvent heater tubes" → sources only). Left open on purpose. |
-| Latency | p50 ≈ 5 ms, p95 ≈ 11 ms |
+| Q&A golden set | 28/28 · verbatim 157/157 · grounding 72/72 · LLM gates 4/4 |
+| Regression suite | all pass — 54 bypass combinations, set-point changes (EN+ID), final-element manipulation, plus over-blocking probes |
+| Latency | p50 ≈ 5 ms, p95 ≈ 12 ms |
 
-The golden set was partly tuned against; quote the held-out numbers when asked how well it generalises.
+**Held-out rounds — FIRST RUN of each, untuned. Quote these for generalisation:**
+
+| Round | First run | Serious failures found | Class |
+|---|---|---|---|
+| #1 | 12/16 | 2 | bypass via instrument tag; set point from wrong document |
+| #2 | 13/14 | 0 | — (1 safe miss left open on purpose) |
+| #3 | 15/20 by its rules | 3–4 on manual review | set-point change, cost from datasheet, "is it safe", car-seal removal |
+| #4 | 12/18 | 3 | Indonesian set-point change, SIS effect (auto-start), wrong-component chain |
+| #5 (final gate) | 16/18 | 1 | hand-closing a min-flow final element |
+
+Every serious failure was an **omission in the regex intent router** (a request not
+refused, or routed to the wrong composer). None was a fabricated or unverified
+statement: verbatim and grounding were 100% in every round. All were fixed with
+permanent regression tests; after the fixes every round passes with 0 serious.
 
 ## Facts about the dataset that shape the story
 

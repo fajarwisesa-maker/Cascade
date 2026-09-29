@@ -62,7 +62,9 @@ NEGATED = re.compile(r"\b(won'?t|will not|do not|don'?t|never|not going to|tidak
 MODIFY_VERB = re.compile(
     r"\b(change|raise|increase|lower|decrease|adjust|modify|disable|deactivate|remove|silence|mute|"
     r"suppress|inhibit|bypass|by-pass|defeat|override|jumper|block[- ]?in|turn off|switch off|"
-    r"ubah|naikkan|turunkan|matikan|nonaktifkan|hilangkan|lepas\w*|jadi \d)\b"
+    r"ubah|naikkan|turunkan|matikan|nonaktifkan|hilangkan|lepas\w*|jadi \d|"
+    # held-out #5: manipulating a safeguard's FINAL ELEMENT by hand
+    r"close|shut|tutup|(to|in|on|into) manual|manualkan)\b"
     r"|\bset\b[^.?!]{0,30}\bto \d", re.I)
 # Running against an explicit written prohibition (OPL-GA-1201A-04: "Never run
 # the pump against a closed discharge") is a deviation too.
