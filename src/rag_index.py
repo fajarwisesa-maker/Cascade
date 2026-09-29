@@ -244,16 +244,22 @@ class Retriever:
             qv = self.dense.encode([q], normalize_embeddings=True)[0]
             rankings.append(self.Dm @ qv)
 
-        fused = np.zeros(len(self.P))
+        # Ties are real here (troubleshooting rows copied verbatim across OPLs
+        # score identically), so ordering must be defined: score desc, then
+        # passage index asc. np.argsort leaves tie order unspecified, which
+        # would make any re-implementation (the browser port) diverge.
+        n = len(self.P)
+        fused = [0.0] * n
         for s in rankings:
-            s = np.where(mask, s, -np.inf)
-            order = np.argsort(-s)
+            s = [float(x) if mask[i] else float("-inf") for i, x in enumerate(s)]
+            order = sorted(range(n), key=lambda i: (-s[i], i))
             for rank, i in enumerate(order):
                 if not mask[i] or s[i] <= 0:
                     continue
                 fused[i] += 1.0 / (self.RRF_K + rank + 1)
+        fused = np.array(fused)
 
-        idx = [i for i in np.argsort(-fused) if mask[i] and fused[i] > 0][:k]
+        idx = [i for i in sorted(range(n), key=lambda i: (-fused[i], i)) if mask[i] and fused[i] > 0][:k]
         return [{"pid": self.P[i].pid, "kind": self.P[i].kind,
                  "asset_tag": self.P[i].asset_tag, "text": self.P[i].text,
                  "anchor": self.P[i].anchor, "ref": self.P[i].ref,

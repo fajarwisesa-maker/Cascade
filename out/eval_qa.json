@@ -8,8 +8,8 @@
  "grounding": "72/72",
  "statements_removed": 0,
  "llm_gate_tests": "4/4",
- "latency_ms_p50": 5.7,
- "latency_ms_p95": 17.3,
+ "latency_ms_p50": 6.2,
+ "latency_ms_p95": 14.6,
  "cases": [
   {
    "q": "GA-1201A tripped on high vibration, can I restart?",
