@@ -1,0 +1,1509 @@
+{
+ "opl": [
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-GA-1201A-01",
+   "asset_tag": "GA-1201A",
+   "title": "Mechanical Seal Flush (API Plan 11) Verification",
+   "discipline": "Mechanical",
+   "equipment": "GA-1201A - HEXANE FEED PUMP",
+   "area": "1200 - HEXANE FEED SYSTEM",
+   "related_interlock": "SEQ-1201 (SIL 1)",
+   "pid_ref": "TJC-LLD-PID-1201",
+   "classification": "Trouble Case",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Wahyu Setiadi (EMP-1113)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-03-22",
+   "purpose": "This One Point Lesson explains mechanical seal flush (api plan 11) verification for GA-1201A (HEXANE FEED PUMP) in the HEXANE FEED SYSTEM. Confirm seal flush dP > 1.5 bar before start. Low flush = seal face overheating and hexane leak to atmosphere. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is HIGH CRITICAL handling n-Hexane at up to 16 barg / 80 degC. Observe the following before",
+    "and during the task:",
+    "Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.",
+    "Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.",
+    "Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.",
+    "Beware of stored mechanical energy (springs, rotating inertia) and pinch points.",
+    "Use certified lifting gear and correct manual-handling technique for heavy parts."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Line up discharge flush to seal chamber and open flush isolation",
+     "check": "Isolation & LOTO verified"
+    },
+    {
+     "n": 2,
+     "action": "Check PDI-1201 reads 1.5-2.5 bar dP across the flush orifice RO-1201",
+     "check": "Parts match BOM / spec"
+    },
+    {
+     "n": 3,
+     "action": "Verify no visible leak or drip at the gland / seal drain",
+     "check": "Torque / clearance to spec"
+    },
+    {
+     "n": 4,
+     "action": "If dP low, isolate and inspect orifice RO-1201 for plugging by polymer/dirt",
+     "check": "No leak / smooth operation"
+    },
+    {
+     "n": 5,
+     "action": "Confirm quench (Plan 62) N2/steam is lined up to the outboard side",
+     "check": "Record in equipment history"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal dr.",
+     "cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face.",
+     "action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, v."
+    },
+    {
+     "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+     "cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+     "action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to."
+    },
+    {
+     "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+     "cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+     "action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68"
+    }
+   ],
+   "key_learning": [
+    "Confirm seal flush dP > 1.5 bar before start. Low flush = seal face overheating and hexane leak to atmosphere.",
+    "Respect the interlock SEQ-1201: e.g. PSLL-1201 trips at < 0.5 barg - never defeat it without a permit.",
+    "Always cross-check the Datasheet limits and the P&ID; TJC-LLD-PID-1201 before working on GA-1201A.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Wahyu Setiadi (EMP-1113)   Arya Wibisono (EMP-0912)   Sunday, 22 March 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-GA-1201A-01 - Mechanical_Seal_Flush_API_Plan_11_Verifi_edited_one_page",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-GA-1201A-01 - Mechanical_Seal_Flush_API_Plan_11_Verifi_edited_one_page::p1::05"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-01 - Mechanical_Seal_Flush_API_Plan_11_Verifi_edited_one_page.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-GA-1201A-02",
+   "asset_tag": "GA-1201A",
+   "title": "Bearing Oil Bath Level & Greasing",
+   "discipline": "Mechanical",
+   "equipment": "GA-1201A - HEXANE FEED PUMP",
+   "area": "1200 - HEXANE FEED SYSTEM",
+   "related_interlock": "SEQ-1201 (SIL 1)",
+   "pid_ref": "TJC-LLD-PID-1201",
+   "classification": "Basic Knowledge",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Wahyu Setiadi (EMP-1113)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-03-26",
+   "purpose": "This One Point Lesson explains bearing oil bath level & greasing for GA-1201A (HEXANE FEED PUMP) in the HEXANE FEED SYSTEM. Maintain oil bath at the centre of the sight glass with ISO VG 68. Both over-fill and under-fill overheat the bearing. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is HIGH CRITICAL handling n-Hexane at up to 16 barg / 80 degC. Observe the following before",
+    "and during the task:",
+    "Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.",
+    "Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.",
+    "Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.",
+    "Beware of stored mechanical energy (springs, rotating inertia) and pinch points.",
+    "Use certified lifting gear and correct manual-handling technique for heavy parts."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Stop pump, isolate electrically (LOTO) before any lube work",
+     "check": "Isolation & LOTO verified"
+    },
+    {
+     "n": 2,
+     "action": "Check the oil sight-glass level sits at the middle mark",
+     "check": "Parts match BOM / spec"
+    },
+    {
+     "n": 3,
+     "action": "Top-up with ISO VG 68 only - never mix grades",
+     "check": "Torque / clearance to spec"
+    },
+    {
+     "n": 4,
+     "action": "Inspect the constant-level oiler bottle and refill",
+     "check": "No leak / smooth operation"
+    },
+    {
+     "n": 5,
+     "action": "Record oil condition (colour/water) on the weekly lube route sheet",
+     "check": "Record in equipment history"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal dr.",
+     "cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face.",
+     "action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, v."
+    },
+    {
+     "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+     "cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+     "action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to."
+    },
+    {
+     "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+     "cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+     "action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68"
+    }
+   ],
+   "key_learning": [
+    "Maintain oil bath at the centre of the sight glass with ISO VG 68. Both over-fill and under-fill overheat the bearing.",
+    "Respect the interlock SEQ-1201: e.g. PSLL-1201 trips at < 0.5 barg - never defeat it without a permit.",
+    "Always cross-check the Datasheet limits and the P&ID; TJC-LLD-PID-1201 before working on GA-1201A.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Wahyu Setiadi (EMP-1113)   Arya Wibisono (EMP-0912)   Thursday, 26 March 2026",
+    "Notes: Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-GA-1201A-02 - Bearing_Oil_Bath_Level_Greasing_EDITED_ONE_PAGE",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-GA-1201A-02 - Bearing_Oil_Bath_Level_Greasing_EDITED_ONE_PAGE::p1::05"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-02 - Bearing_Oil_Bath_Level_Greasing_EDITED_ONE_PAGE.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-GA-1201A-03",
+   "asset_tag": "GA-1201A",
+   "title": "Pump-Motor Alignment Check (Laser)",
+   "discipline": "Mechanical",
+   "equipment": "GA-1201A - HEXANE FEED PUMP",
+   "area": "1200 - HEXANE FEED SYSTEM",
+   "related_interlock": "SEQ-1201 (SIL 1)",
+   "pid_ref": "TJC-LLD-PID-1201",
+   "classification": "Improvement",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Wahyu Setiadi (EMP-1113)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-03-30",
+   "purpose": "This One Point Lesson explains pump-motor alignment check (laser) for GA-1201A (HEXANE FEED PUMP) in the HEXANE FEED SYSTEM. Shaft misalignment is the #1 root cause of GA-1201A high-vibration trips (VSHH-1201) and premature bearing/seal failure. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is HIGH CRITICAL handling n-Hexane at up to 16 barg / 80 degC. Observe the following before",
+    "and during the task:",
+    "Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.",
+    "Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.",
+    "Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.",
+    "Beware of stored mechanical energy (springs, rotating inertia) and pinch points.",
+    "Use certified lifting gear and correct manual-handling technique for heavy parts."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Isolate and LOTO the motor, remove coupling guard",
+     "check": "Isolation & LOTO verified"
+    },
+    {
+     "n": 2,
+     "action": "Mount laser alignment brackets across the coupling spacer",
+     "check": "Parts match BOM / spec"
+    },
+    {
+     "n": 3,
+     "action": "Rotate 0-90-180-270 deg and capture readings",
+     "check": "Torque / clearance to spec"
+    },
+    {
+     "n": 4,
+     "action": "Target angular < 0.05 mm/100 mm and offset < 0.05 mm",
+     "check": "No leak / smooth operation"
+    },
+    {
+     "n": 5,
+     "action": "Add/remove shims under motor feet, re-check, and record the alignment report",
+     "check": "Record in equipment history"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal dr.",
+     "cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face.",
+     "action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, v."
+    },
+    {
+     "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+     "cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+     "action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to."
+    },
+    {
+     "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+     "cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+     "action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68"
+    }
+   ],
+   "key_learning": [
+    "Shaft misalignment is the #1 root cause of GA-1201A high-vibration trips (VSHH-1201) and premature bearing/seal failure.",
+    "Respect the interlock SEQ-1201: e.g. PSLL-1201 trips at < 0.5 barg - never defeat it without a permit.",
+    "Always cross-check the Datasheet limits and the P&ID; TJC-LLD-PID-1201 before working on GA-1201A.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Wahyu Setiadi (EMP-1113)   Arya Wibisono (EMP-0912)   Monday, 30 March 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-GA-1201A-03 - Pump_Motor_Alignment_Check_Laser_edited",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-GA-1201A-03 - Pump_Motor_Alignment_Check_Laser_edited::p1::05"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-03 - Pump_Motor_Alignment_Check_Laser_edited.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-GA-1201A-04",
+   "asset_tag": "GA-1201A",
+   "title": "Minimum Flow Line Operation & Deadhead Protection",
+   "discipline": "Process / Operations",
+   "equipment": "GA-1201A - HEXANE FEED PUMP",
+   "area": "1200 - HEXANE FEED SYSTEM",
+   "related_interlock": "SEQ-1201 (SIL 1)",
+   "pid_ref": "TJC-LLD-PID-1201",
+   "classification": "Basic Knowledge",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Wahyu Setiadi (EMP-1113)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-04-03",
+   "purpose": "This One Point Lesson explains minimum flow line operation & deadhead protection for GA-1201A (HEXANE FEED PUMP) in the HEXANE FEED SYSTEM. Never run the pump against a closed discharge. The min-flow recycle (FV-1201) protects the pump from deadhead overheating. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is HIGH CRITICAL handling n-Hexane at up to 16 barg / 80 degC. Observe the following before",
+    "and during the task:",
+    "Obtain the correct operating permit and brief the shift team before the task.",
+    "Confirm hazardous fluids are isolated / inerted as required by procedure.",
+    "Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.",
+    "Never defeat a safety interlock or trip without an authorised override permit.",
+    "Have emergency actions and communications ready before starting."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Confirm FV-1201 min-flow recycle line is open before start",
+     "check": "Permit valid & briefed"
+    },
+    {
+     "n": 2,
+     "action": "Watch that FIC-1201 stays above the 9 m3/h minimum continuous flow",
+     "check": "Parameter within limit"
+    },
+    {
+     "n": 3,
+     "action": "If FSLL-1201 trips, check downstream XV-1201 and manual valves for a closed path",
+     "check": "Interlock status confirmed"
+    },
+    {
+     "n": 4,
+     "action": "Do not defeat the min-flow interlock to force higher discharge pressure",
+     "check": "Change logged on DCS"
+    },
+    {
+     "n": 5,
+     "action": "Reset the pump only after the low-flow cause has been cleared",
+     "check": "Handover to next shift"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal dr",
+     "cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face",
+     "action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, v"
+    },
+    {
+     "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+     "cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+     "action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to"
+    },
+    {
+     "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+     "cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+     "action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68"
+    }
+   ],
+   "key_learning": [
+    "Never run the pump against a closed discharge. The min-flow recycle (FV-1201) protects the pump from deadhead overheating.",
+    "Respect the interlock SEQ-1201: e.g. PSLL-1201 trips at < 0.5 barg - never defeat it without a permit.",
+    "Always cross-check the Datasheet limits and the P&ID; TJC-LLD-PID-1201 before working on GA-1201A.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator /   Wahyu Setiadi   Arya Wibisono   Friday, 03 April",
+    "Technician   (EMP-1113)   (EMP-0912)   2026",
+    "Notes: Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-GA-1201A-04 - Minimum_Flow_Line_Operation_Deadhead_Pro_EDITED_KEEP_SIZE_REFINED_TABLE",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-GA-1201A-04 - Minimum_Flow_Line_Operation_Deadhead_Pro_EDITED_KEEP_SIZE_REFINED_TABLE::p1::05"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-04 - Minimum_Flow_Line_Operation_Deadhead_Pro_EDITED_KEEP_SIZE_REFINED_TABLE.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-GA-1201A-05",
+   "asset_tag": "GA-1201A",
+   "title": "Cold Alignment vs Hot Check for Hexane Service",
+   "discipline": "Mechanical",
+   "equipment": "GA-1201A - HEXANE FEED PUMP",
+   "area": "1200 - HEXANE FEED SYSTEM",
+   "related_interlock": "SEQ-1201 (SIL 1)",
+   "pid_ref": "TJC-LLD-PID-1201",
+   "classification": "Improvement",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Wahyu Setiadi (EMP-1113)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-04-07",
+   "purpose": "This One Point Lesson explains cold alignment vs hot check for hexane service for GA-1201A (HEXANE FEED PUMP) in the HEXANE FEED SYSTEM. Hexane at operating temperature grows the casing; a good cold alignment must include the correct thermal-growth offset. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is HIGH CRITICAL handling n-Hexane at up to 16 barg / 80 degC. Observe the following before",
+    "and during the task:",
+    "Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.",
+    "Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.",
+    "Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.",
+    "Beware of stored mechanical energy (springs, rotating inertia) and pinch points.",
+    "Use certified lifting gear and correct manual-handling technique for heavy parts."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Take cold alignment with the specified target offsets applied",
+     "check": "Isolation & LOTO verified"
+    },
+    {
+     "n": 2,
+     "action": "After ~2 h at temperature, do a hot-check on the coupling",
+     "check": "Parts match BOM / spec"
+    },
+    {
+     "n": 3,
+     "action": "Compare hot readings against the cold targets",
+     "check": "Torque / clearance to spec"
+    },
+    {
+     "n": 4,
+     "action": "Adjust thermal-growth compensation if repeat vibration trips occur",
+     "check": "No leak / smooth operation"
+    },
+    {
+     "n": 5,
+     "action": "Log both cold and hot data in the machine history file",
+     "check": "Record in equipment history"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal dr.",
+     "cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face.",
+     "action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, v."
+    },
+    {
+     "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+     "cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+     "action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to."
+    },
+    {
+     "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+     "cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+     "action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68"
+    }
+   ],
+   "key_learning": [
+    "Hexane at operating temperature grows the casing; a good cold alignment must include the correct thermal-growth offset.",
+    "Respect the interlock SEQ-1201: e.g. PSLL-1201 trips at < 0.5 barg - never defeat it without a permit.",
+    "Always cross-check the Datasheet limits and the P&ID; TJC-LLD-PID-1201 before working on GA-1201A.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Wahyu Setiadi (EMP-1113)   Arya Wibisono (EMP-0912)   Tuesday, 07 April 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID;, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-GA-1201A-05 - Cold_Alignment_vs_Hot_Check_for_Hexane_S_edited",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-GA-1201A-05 - Cold_Alignment_vs_Hot_Check_for_Hexane_S_edited::p1::05"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-05 - Cold_Alignment_vs_Hot_Check_for_Hexane_S_edited.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-GA-1201A-06",
+   "asset_tag": "GA-1201A",
+   "title": "Start-Up & Priming Procedure GA-1201A",
+   "discipline": "Process / Operations",
+   "equipment": "GA-1201A - HEXANE FEED PUMP",
+   "area": "1200 - HEXANE FEED SYSTEM",
+   "related_interlock": "SEQ-1201 (SIL 1)",
+   "pid_ref": "TJC-LLD-PID-1201",
+   "classification": "Basic Knowledge",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Wahyu Setiadi (EMP-1113)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-04-11",
+   "purpose": "This One Point Lesson explains start-up & priming procedure ga-1201a for GA-1201A (HEXANE FEED PUMP) in the HEXANE FEED SYSTEM. Correct priming and venting prevents a dry-run that instantly destroys the mechanical seal. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is HIGH CRITICAL handling n-Hexane at up to 16 barg / 80 degC. Observe the following before",
+    "and during the task:",
+    "Obtain the correct operating permit and brief the shift team before the task.",
+    "Confirm hazardous fluids are isolated / inerted as required by procedure.",
+    "Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.",
+    "Never defeat a safety interlock or trip without an authorised override permit.",
+    "Have emergency actions and communications ready before starting."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Open the suction valve fully and vent the casing air via N5 vent",
+     "check": "Permit valid & briefed"
+    },
+    {
+     "n": 2,
+     "action": "Establish seal flush Plan 11 and confirm PDI-1201 dP",
+     "check": "Parameter within limit"
+    },
+    {
+     "n": 3,
+     "action": "Confirm the min-flow recycle line FV-1201 is open",
+     "check": "Interlock status confirmed"
+    },
+    {
+     "n": 4,
+     "action": "Bump-start the motor and check correct rotation direction",
+     "check": "Change logged on DCS"
+    },
+    {
+     "n": 5,
+     "action": "Start the motor and confirm PIC-1201 pressure and vibration settle within 5 s",
+     "check": "Handover to next shift"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "Hexane leak observed at GA-1201A seal gland during operation, seal dr",
+     "cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face",
+     "action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, v"
+    },
+    {
+     "symptom": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+     "cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+     "action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to"
+    },
+    {
+     "symptom": "Bearing DE noisy with rising temperature TI-1201 trend",
+     "cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+     "action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68"
+    }
+   ],
+   "key_learning": [
+    "Correct priming and venting prevents a dry-run that instantly destroys the mechanical seal.",
+    "Respect the interlock SEQ-1201: e.g. PSLL-1201 trips at < 0.5 barg - never defeat it without a permit.",
+    "Always cross-check the Datasheet limits and the P&ID; TJC-LLD-PID-1201 before working on GA-1201A.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Wahyu Setiadi (EMP-1113)   Arya Wibisono (EMP-0912)   Saturday, 11 April 2026",
+    "Notes: Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE::p1::05"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-GA-1201A-07",
+   "asset_tag": "GA-1201A",
+   "title": "Vibration Trend Monitoring & Alarm Response (VSHH-1201)",
+   "discipline": "Instrument",
+   "equipment": "GA-1201A - HEXANE FEED PUMP",
+   "area": "1200 - HEXANE FEED SYSTEM",
+   "related_interlock": "SEQ-1201 (SIL 1)",
+   "pid_ref": "TJC-LLD-PID-1201",
+   "classification": "Improvement",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Wahyu Setiadi (EMP-1113)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-04-15",
+   "purpose": "This One Point Lesson explains vibration trend monitoring & alarm response (vshh-1201) for GA-1201A (HEXANE FEED PUMP) in the HEXANE FEED SYSTEM. A rising vibration trend predicts bearing failure days in advance and lets you plan a repair before a trip. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is HIGH CRITICAL handling n-Hexane at up to 16 barg / 80 degC. Observe the following before",
+    "and during the task:",
+    "De-energise and isolate the loop; place the function to bypass/inhibit under permit.",
+    "Inform the panel operator before working on any trip, valve or transmitter.",
+    "Take care with instrument air / hydraulic pressure when disconnecting tubing.",
+    "Verify intrinsic-safety / Ex integrity is restored before returning to service.",
+    "Wear correct PPE and follow ESD/override control procedures."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Record VT-1201 on the daily PdM route in mm/s RMS",
+     "check": "Loop isolated / under permit"
+    },
+    {
+     "n": 2,
+     "action": "Note alarm at 4.5 mm/s and trip at 7.1 mm/s (VSHH-1201)",
+     "check": "Reference standard traceable"
+    },
+    {
+     "n": 3,
+     "action": "A rise greater than 1 mm/s within a week = plan a bearing inspection",
+     "check": "As-found & as-left recorded"
+    },
+    {
+     "n": 4,
+     "action": "Correlate the vibration rise with TI-1201 bearing temperature",
+     "check": "Trip / control action verified"
+    },
+    {
+     "n": 5,
+     "action": "Escalate to reliability engineer if the 1x running-speed component dominates",
+     "check": "Return to service confirmed"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "Scheduled proof test of low-low suction pressure trip",
+     "cause": "Switch set-point drift found +0.08 barg during proof test",
+     "action": "Recalibrated PSLL-1201 to 0.5 barg trip, function tested to DCS"
+    },
+    {
+     "symptom": "PDI-1201 reading erratic, seal-flush low alarm nuisance-tripping",
+     "cause": "Impulse lines fouled with hexane residue/polymer fines",
+     "action": "Cleaned impulse lines and re-zeroed PDI-1201 transmitter"
+    },
+    {
+     "symptom": "Discharge flow control hunting, FIC-1201 oscillating",
+     "cause": "Loop poorly tuned after transmitter re-range",
+     "action": "Re-ranged FT-1201 and retuned FIC-1201 PID parameters"
+    }
+   ],
+   "key_learning": [
+    "A rising vibration trend predicts bearing failure days in advance and lets you plan a repair before a trip.",
+    "Respect the interlock SEQ-1201: e.g. PSLL-1201 trips at < 0.5 barg - never defeat it without a permit.",
+    "Always cross-check the Datasheet limits and the P&ID; TJC-LLD-PID-1201 before working on GA-1201A.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Wednesday, 15 April",
+    "Panel Operator / Technician   Wahyu Setiadi (EMP-1113)   Arya Wibisono (EMP-0912)",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID; Interlock and Maintenance History"
+   ],
+   "anchor": {
+    "doc_id": "OPL-GA-1201A-07 - Vibration_Trend_Monitoring_Alarm_Respons_EDITED",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-GA-1201A-07 - Vibration_Trend_Monitoring_Alarm_Respons_EDITED::p1::05"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-07 - Vibration_Trend_Monitoring_Alarm_Respons_EDITED.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-EA-5601-01",
+   "asset_tag": "EA-5601",
+   "title": "Tube-Side Cleaning (Hydrojetting)",
+   "discipline": "Mechanical",
+   "equipment": "EA-5601 - SOLVENT HEATER",
+   "area": "5600 - SOLVENT HEATING SYSTEM",
+   "related_interlock": "N/A (control loop only) (N/A)",
+   "pid_ref": "TJC-LLD-PID-5601",
+   "classification": "Trouble Case",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Yudha Permana (EMP-1124)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-05-05",
+   "purpose": "This One Point Lesson explains tube-side cleaning (hydrojetting) for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Hexane fouling on the tube side raises the differential pressure (PDT-5605) and cuts the heat duty, leaving cold solvent downstream. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is LOW CRITICAL handling Hexane / MP Steam at up to 16 barg (tube) / 200 degC. Observe",
+    "the following before and during the task:",
+    "Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.",
+    "Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.",
+    "Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.",
+    "Beware of stored mechanical energy (springs, rotating inertia) and pinch points.",
+    "Use certified lifting gear and correct manual-handling technique for heavy parts."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Isolate and drain both sides, then purge with nitrogen",
+     "check": "Isolation & LOTO verified"
+    },
+    {
+     "n": 2,
+     "action": "Open the channel cover and remove the old gasket",
+     "check": "Parts match BOM / spec"
+    },
+    {
+     "n": 3,
+     "action": "Hydrojet the tube bores and inspect for pitting/erosion",
+     "check": "Torque / clearance to spec"
+    },
+    {
+     "n": 4,
+     "action": "Verify tube-side dP restored and no residual blockage",
+     "check": "No leak / smooth operation"
+    },
+    {
+     "n": 5,
+     "action": "Re-gasket with new SW SS316 gasket and box up to torque",
+     "check": "Record in equipment history"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "High tube dP PDT-5605, low solvent outlet temperature",
+     "cause": "Hexane fouling / polymer fines deposit on tube bores",
+     "action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed"
+    },
+    {
+     "symptom": "Hexane weep at channel flange",
+     "cause": "Spiral-wound channel gasket relaxed / damaged",
+     "action": "Renewed channel gasket, re-torqued in cross pattern"
+    },
+    {
+     "symptom": "Continuous steam at condensate, high steam use",
+     "cause": "Steam trap element failed open",
+     "action": "Replaced steam trap element, verified condensate temperature"
+    }
+   ],
+   "key_learning": [
+    "Hexane fouling on the tube side raises the differential pressure (PDT-5605) and cuts the heat duty, leaving cold solvent downstream.",
+    "Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Yudha Permana (EMP-1124)   Arya Wibisono (EMP-0912)   Tuesday, 05 May 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-EA-5601-01 - Tube_Side_Cleaning_Hydrojetting",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-EA-5601-01 - Tube_Side_Cleaning_Hydrojetting::p1::04"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-01 - Tube_Side_Cleaning_Hydrojetting.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-EA-5601-02",
+   "asset_tag": "EA-5601",
+   "title": "Gasket Replacement & Flange Box-Up",
+   "discipline": "Mechanical",
+   "equipment": "EA-5601 - SOLVENT HEATER",
+   "area": "5600 - SOLVENT HEATING SYSTEM",
+   "related_interlock": "N/A (control loop only) (N/A)",
+   "pid_ref": "TJC-LLD-PID-5601",
+   "classification": "Basic Knowledge",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Yudha Permana (EMP-1124)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-05-09",
+   "purpose": "This One Point Lesson explains gasket replacement & flange box-up for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Spiral-wound gaskets are single-use; reusing one causes hexane leaks at the channel and shell flanges. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is LOW CRITICAL handling Hexane / MP Steam at up to 16 barg (tube) / 200 degC. Observe",
+    "the following before and during the task:",
+    "Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.",
+    "Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.",
+    "Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.",
+    "Beware of stored mechanical energy (springs, rotating inertia) and pinch points.",
+    "Use certified lifting gear and correct manual-handling technique for heavy parts."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Remove the old shell and channel gaskets completely",
+     "check": "Isolation & LOTO verified"
+    },
+    {
+     "n": 2,
+     "action": "Clean and inspect the gasket seating faces for damage",
+     "check": "Parts match BOM / spec"
+    },
+    {
+     "n": 3,
+     "action": "Fit new SW SS316/graphite gaskets, correctly centred",
+     "check": "Torque / clearance to spec"
+    },
+    {
+     "n": 4,
+     "action": "Torque the flange bolts in a cross pattern in passes",
+     "check": "No leak / smooth operation"
+    },
+    {
+     "n": 5,
+     "action": "Leak test on start-up and re-torque hot if permitted",
+     "check": "Record in equipment history"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "High tube dP PDT-5605, low solvent outlet temperature",
+     "cause": "Hexane fouling / polymer fines deposit on tube bores",
+     "action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed"
+    },
+    {
+     "symptom": "Hexane weep at channel flange",
+     "cause": "Spiral-wound channel gasket relaxed / damaged",
+     "action": "Renewed channel gasket, re-torqued in cross pattern"
+    },
+    {
+     "symptom": "Continuous steam at condensate, high steam use",
+     "cause": "Steam trap element failed open",
+     "action": "Replaced steam trap element, verified condensate temperature"
+    }
+   ],
+   "key_learning": [
+    "Spiral-wound gaskets are single-use; reusing one causes hexane leaks at the channel and shell flanges.",
+    "Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Yudha Permana (EMP-1124)   Arya Wibisono (EMP-0912)   Saturday, 09 May 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-EA-5601-02 - Gasket_Replacement_Flange_Box_Up",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-EA-5601-02 - Gasket_Replacement_Flange_Box_Up::p1::04"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-02 - Gasket_Replacement_Flange_Box_Up.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-EA-5601-03",
+   "asset_tag": "EA-5601",
+   "title": "Steam Trap Health Check",
+   "discipline": "Process / Operations",
+   "equipment": "EA-5601 - SOLVENT HEATER",
+   "area": "5600 - SOLVENT HEATING SYSTEM",
+   "related_interlock": "N/A (control loop only) (N/A)",
+   "pid_ref": "TJC-LLD-PID-5601",
+   "classification": "Improvement",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Yudha Permana (EMP-1124)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-05-13",
+   "purpose": "This One Point Lesson explains steam trap health check for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. A failed steam trap either floods the shell (killing duty) or blows live steam (wasting energy); regular checks catch both. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is LOW CRITICAL handling Hexane / MP Steam at up to 16 barg (tube) / 200 degC. Observe",
+    "the following before and during the task:",
+    "Obtain the correct operating permit and brief the shift team before the task.",
+    "Confirm hazardous fluids are isolated / inerted as required by procedure.",
+    "Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.",
+    "Never defeat a safety interlock or trip without an authorised override permit.",
+    "Have emergency actions and communications ready before starting."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Compare the condensate temperature TI-5604 to steam temperature",
+     "check": "Permit valid & briefed"
+    },
+    {
+     "n": 2,
+     "action": "Use ultrasonic or a listening stick to check trap operation",
+     "check": "Parameter within limit"
+    },
+    {
+     "n": 3,
+     "action": "A cold trap means flooding; a continuously hot blow means leak-through",
+     "check": "Interlock status confirmed"
+    },
+    {
+     "n": 4,
+     "action": "Check the condensate pot level gauge LG-5606",
+     "check": "Change logged on DCS"
+    },
+    {
+     "n": 5,
+     "action": "Replace the trap element or trap as required",
+     "check": "Handover to next shift"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "High tube dP PDT-5605, low solvent outlet temperature",
+     "cause": "Hexane fouling / polymer fines deposit on tube bores",
+     "action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed"
+    },
+    {
+     "symptom": "Hexane weep at channel flange",
+     "cause": "Spiral-wound channel gasket relaxed / damaged",
+     "action": "Renewed channel gasket, re-torqued in cross pattern"
+    },
+    {
+     "symptom": "Continuous steam at condensate, high steam use",
+     "cause": "Steam trap element failed open",
+     "action": "Replaced steam trap element, verified condensate temperature"
+    }
+   ],
+   "key_learning": [
+    "A failed steam trap either floods the shell (killing duty) or blows live steam (wasting energy); regular checks catch both.",
+    "Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Yudha Permana (EMP-1124)   Arya Wibisono (EMP-0912)   Wednesday, 13 May 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-EA-5601-03 - Steam_Trap_Health_Check",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-EA-5601-03 - Steam_Trap_Health_Check::p1::04"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-03 - Steam_Trap_Health_Check.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-EA-5601-04",
+   "asset_tag": "EA-5601",
+   "title": "Thermal-Shock Avoidance on Start-Up",
+   "discipline": "Process / Operations",
+   "equipment": "EA-5601 - SOLVENT HEATER",
+   "area": "5600 - SOLVENT HEATING SYSTEM",
+   "related_interlock": "N/A (control loop only) (N/A)",
+   "pid_ref": "TJC-LLD-PID-5601",
+   "classification": "Basic Knowledge",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Yudha Permana (EMP-1124)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-05-17",
+   "purpose": "This One Point Lesson explains thermal-shock avoidance on start-up for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Admitting steam onto a cold tube bundle too fast cracks the tube-to-tubesheet joints, causing internal leaks. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is LOW CRITICAL handling Hexane / MP Steam at up to 16 barg (tube) / 200 degC. Observe",
+    "the following before and during the task:",
+    "Obtain the correct operating permit and brief the shift team before the task.",
+    "Confirm hazardous fluids are isolated / inerted as required by procedure.",
+    "Beware of flammable, hot, or high-pressure fluids; wear the correct PPE.",
+    "Never defeat a safety interlock or trip without an authorised override permit.",
+    "Have emergency actions and communications ready before starting."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Establish solvent (tube-side) flow first",
+     "check": "Permit valid & briefed"
+    },
+    {
+     "n": 2,
+     "action": "Admit steam slowly by ramping the TV-5602 / TIC-5602 set-point",
+     "check": "Parameter within limit"
+    },
+    {
+     "n": 3,
+     "action": "Warm the exchanger through gradually",
+     "check": "Interlock status confirmed"
+    },
+    {
+     "n": 4,
+     "action": "Avoid sudden large steps in the outlet temperature set-point",
+     "check": "Change logged on DCS"
+    },
+    {
+     "n": 5,
+     "action": "Watch for knocking that indicates condensate hammer",
+     "check": "Handover to next shift"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "High tube dP PDT-5605, low solvent outlet temperature",
+     "cause": "Hexane fouling / polymer fines deposit on tube bores",
+     "action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed"
+    },
+    {
+     "symptom": "Hexane weep at channel flange",
+     "cause": "Spiral-wound channel gasket relaxed / damaged",
+     "action": "Renewed channel gasket, re-torqued in cross pattern"
+    },
+    {
+     "symptom": "Continuous steam at condensate, high steam use",
+     "cause": "Steam trap element failed open",
+     "action": "Replaced steam trap element, verified condensate temperature"
+    }
+   ],
+   "key_learning": [
+    "Admitting steam onto a cold tube bundle too fast cracks the tube-to-tubesheet joints, causing internal leaks.",
+    "Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Yudha Permana (EMP-1124)   Arya Wibisono (EMP-0912)   Sunday, 17 May 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-EA-5601-04 - Thermal_Shock_Avoidance_on_Start_Up",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-EA-5601-04 - Thermal_Shock_Avoidance_on_Start_Up::p1::04"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-04 - Thermal_Shock_Avoidance_on_Start_Up.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-EA-5601-05",
+   "asset_tag": "EA-5601",
+   "title": "Tube Leak Detection & Plugging",
+   "discipline": "Mechanical",
+   "equipment": "EA-5601 - SOLVENT HEATER",
+   "area": "5600 - SOLVENT HEATING SYSTEM",
+   "related_interlock": "N/A (control loop only) (N/A)",
+   "pid_ref": "TJC-LLD-PID-5601",
+   "classification": "Trouble Case",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Yudha Permana (EMP-1124)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-05-21",
+   "purpose": "This One Point Lesson explains tube leak detection & plugging for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. A tube leak lets steam into the solvent (rising outlet temperature and water in the solvent); the leaking tube must be found and plugged. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is LOW CRITICAL handling Hexane / MP Steam at up to 16 barg (tube) / 200 degC. Observe",
+    "the following before and during the task:",
+    "Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.",
+    "Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.",
+    "Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.",
+    "Beware of stored mechanical energy (springs, rotating inertia) and pinch points.",
+    "Use certified lifting gear and correct manual-handling technique for heavy parts."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Isolate and hydrotest the shell side to find the leak",
+     "check": "Isolation & LOTO verified"
+    },
+    {
+     "n": 2,
+     "action": "Bubble-test to identify the specific leaking tube",
+     "check": "Parts match BOM / spec"
+    },
+    {
+     "n": 3,
+     "action": "Plug both ends of the tube with tapered plugs",
+     "check": "Torque / clearance to spec"
+    },
+    {
+     "n": 4,
+     "action": "Record the plugged-tube count (maximum 5 % of tubes)",
+     "check": "No leak / smooth operation"
+    },
+    {
+     "n": 5,
+     "action": "Plan bundle replacement if the plugging limit is reached",
+     "check": "Record in equipment history"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "High tube dP PDT-5605, low solvent outlet temperature",
+     "cause": "Hexane fouling / polymer fines deposit on tube bores",
+     "action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed"
+    },
+    {
+     "symptom": "Hexane weep at channel flange",
+     "cause": "Spiral-wound channel gasket relaxed / damaged",
+     "action": "Renewed channel gasket, re-torqued in cross pattern"
+    },
+    {
+     "symptom": "Continuous steam at condensate, high steam use",
+     "cause": "Steam trap element failed open",
+     "action": "Replaced steam trap element, verified condensate temperature"
+    }
+   ],
+   "key_learning": [
+    "A tube leak lets steam into the solvent (rising outlet temperature and water in the solvent); the leaking tube must be found and plugged.",
+    "Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Yudha Permana (EMP-1124)   Arya Wibisono (EMP-0912)   Thursday, 21 May 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-EA-5601-05 - Tube_Leak_Detection_Plugging",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-EA-5601-05 - Tube_Leak_Detection_Plugging::p1::04"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-05 - Tube_Leak_Detection_Plugging.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-EA-5601-06",
+   "asset_tag": "EA-5601",
+   "title": "Fouling Trend & Cleaning Schedule (PDT-5605)",
+   "discipline": "Instrument",
+   "equipment": "EA-5601 - SOLVENT HEATER",
+   "area": "5600 - SOLVENT HEATING SYSTEM",
+   "related_interlock": "N/A (control loop only) (N/A)",
+   "pid_ref": "TJC-LLD-PID-5601",
+   "classification": "Improvement",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Yudha Permana (EMP-1124)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-05-25",
+   "purpose": "This One Point Lesson explains fouling trend & cleaning schedule (pdt-5605) for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. Trending the tube-side differential pressure predicts when cleaning is due before the duty is lost. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is LOW CRITICAL handling Hexane / MP Steam at up to 16 barg (tube) / 200 degC. Observe",
+    "the following before and during the task:",
+    "De-energise and isolate the loop; place the function to bypass/inhibit under permit.",
+    "Inform the panel operator before working on any trip, valve or transmitter.",
+    "Take care with instrument air / hydraulic pressure when disconnecting tubing.",
+    "Verify intrinsic-safety / Ex integrity is restored before returning to service.",
+    "Wear correct PPE and follow ESD/override control procedures."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Log PDT-5605 differential pressure weekly",
+     "check": "Loop isolated / under permit"
+    },
+    {
+     "n": 2,
+     "action": "Note the PDAH-5605 fouling alarm at 0.7 bar dP",
+     "check": "Reference standard traceable"
+    },
+    {
+     "n": 3,
+     "action": "Correlate rising dP with any outlet-temperature shortfall",
+     "check": "As-found & as-left recorded"
+    },
+    {
+     "n": 4,
+     "action": "Plan cleaning before the duty loss becomes critical",
+     "check": "Trip / control action verified"
+    },
+    {
+     "n": 5,
+     "action": "Feed the trend into the exchanger cleaning program",
+     "check": "Return to service confirmed"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "Outlet temperature hunting around set-point",
+     "cause": "Steam valve TV-5602 loop poorly tuned",
+     "action": "Retuned TIC-5602 PID, verified stable control"
+    },
+    {
+     "symptom": "Erratic tube dP reading",
+     "cause": "Impulse lines plugged with fines",
+     "action": "Cleaned and re-zeroed PDT-5605 transmitter"
+    },
+    {
+     "symptom": "Cracked gauge glass on condensate pot",
+     "cause": "Thermal/mechanical stress on glass",
+     "action": "Replaced LG-5606 gauge glass and seals"
+    }
+   ],
+   "key_learning": [
+    "Trending the tube-side differential pressure predicts when cleaning is due before the duty is lost.",
+    "Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Yudha Permana (EMP-1124)   Arya Wibisono (EMP-0912)   Monday, 25 May 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-EA-5601-06 - Fouling_Trend_Cleaning_Schedule_PDT_5605",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-EA-5601-06 - Fouling_Trend_Cleaning_Schedule_PDT_5605::p1::04"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-06 - Fouling_Trend_Cleaning_Schedule_PDT_5605.pdf"
+  },
+  {
+   "kind": "OPL",
+   "opl_no": "OPL-EA-5601-07",
+   "asset_tag": "EA-5601",
+   "title": "PSV-5607 Testing & Car-Seal Management",
+   "discipline": "Mechanical",
+   "equipment": "EA-5601 - SOLVENT HEATER",
+   "area": "5600 - SOLVENT HEATING SYSTEM",
+   "related_interlock": "N/A (control loop only) (N/A)",
+   "pid_ref": "TJC-LLD-PID-5601",
+   "classification": "Basic Knowledge",
+   "prepared_by": "Panel Operator / Technician",
+   "reviewed_by": "Yudha Permana (EMP-1124)",
+   "approved_by": "Arya Wibisono (EMP-0912)",
+   "date_shared": "2026-05-29",
+   "purpose": "This One Point Lesson explains psv-5607 testing & car-seal management for EA-5601 (SOLVENT HEATER) in the SOLVENT HEATING SYSTEM. The tube-side relief valve is the exchanger's overpressure protection and must be proven and never isolated in service. The lesson gives operators and technicians the key knowledge and the correct step-by-step method so the task is done safely, correctly and consistently every time.",
+   "safety": [
+    "Hazard note: this equipment is LOW CRITICAL handling Hexane / MP Steam at up to 16 barg (tube) / 200 degC. Observe",
+    "the following before and during the task:",
+    "Apply LOTO (Lock-Out Tag-Out) and prove zero energy before starting work.",
+    "Isolate, depressurise, drain and purge the equipment; obtain a valid work permit.",
+    "Wear the correct PPE: coverall, safety shoes, gloves, goggles and hearing protection.",
+    "Beware of stored mechanical energy (springs, rotating inertia) and pinch points.",
+    "Use certified lifting gear and correct manual-handling technique for heavy parts."
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "action": "Confirm PSV-5607 is set to 16 barg on the nameplate",
+     "check": "Isolation & LOTO verified"
+    },
+    {
+     "n": 2,
+     "action": "Carry out an off-line pop test per the statutory schedule",
+     "check": "Parts match BOM / spec"
+    },
+    {
+     "n": 3,
+     "action": "Keep the PSV inlet/outlet isolation car-sealed open in service",
+     "check": "Torque / clearance to spec"
+    },
+    {
+     "n": 4,
+     "action": "Record the test certificate and next due date",
+     "check": "No leak / smooth operation"
+    },
+    {
+     "n": 5,
+     "action": "Never block-in a live PSV without an authorised spare",
+     "check": "Record in equipment history"
+    }
+   ],
+   "troubleshooting": [
+    {
+     "symptom": "High tube dP PDT-5605, low solvent outlet temperature",
+     "cause": "Hexane fouling / polymer fines deposit on tube bores",
+     "action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed"
+    },
+    {
+     "symptom": "Hexane weep at channel flange",
+     "cause": "Spiral-wound channel gasket relaxed / damaged",
+     "action": "Renewed channel gasket, re-torqued in cross pattern"
+    },
+    {
+     "symptom": "Continuous steam at condensate, high steam use",
+     "cause": "Steam trap element failed open",
+     "action": "Replaced steam trap element, verified condensate temperature"
+    }
+   ],
+   "key_learning": [
+    "The tube-side relief valve is the exchanger's overpressure protection and must be proven and never isolated in service.",
+    "Always cross-check the Datasheet limits and the P&ID TJC-LLD-PID-5601 before working on EA-5601.",
+    "Record the work in the equipment history so the Knowledge Hub stays the single source of truth.",
+    "Prepared by   Reviewed by (Supervisor)   Approved by (Manager)   Date of Sharing",
+    "Panel Operator / Technician   Yudha Permana (EMP-1124)   Arya Wibisono (EMP-0912)   Friday, 29 May 2026",
+    "Cross-ref tag GA-1201A across Datasheet, GA, P&ID, Interlock and Maintenance History."
+   ],
+   "anchor": {
+    "doc_id": "OPL-EA-5601-07 - PSV_5607_Testing_Car_Seal_Management",
+    "page": 1,
+    "section": "4. DETAILED PROCEDURE / STEPS",
+    "chunk_id": "OPL-EA-5601-07 - PSV_5607_Testing_Car_Seal_Management::p1::04"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-07 - PSV_5607_Testing_Car_Seal_Management.pdf"
+  }
+ ],
+ "interlock": [
+  {
+   "kind": "INTERLOCK",
+   "asset_tag": "GA-1201A",
+   "doc_number": "TJC-LLD-IL-GA-1201A",
+   "revision": "3",
+   "logic_no": "SEQ-1201",
+   "sil": "SIL 1",
+   "description": "HEXANE FEED PUMP (GA-1201A/B) SHUTDOWN LOGIC",
+   "causes": [
+    {
+     "id": "T1",
+     "initiator": "Suction pressure LOW-LOW",
+     "tag": "PSLL-1201",
+     "setpoint": "< 0.5 barg",
+     "vote": "2oo3",
+     "effects": [
+      "EFF-1",
+      "EFF-2",
+      "EFF-4",
+      "EFF-5"
+     ]
+    },
+    {
+     "id": "T2",
+     "initiator": "Discharge flow LOW-LOW (min flow)",
+     "tag": "FSLL-1201",
+     "setpoint": "< 9 m3/h for 30 s",
+     "vote": "1oo1",
+     "effects": [
+      "EFF-1",
+      "EFF-3",
+      "EFF-4",
+      "EFF-5"
+     ]
+    },
+    {
+     "id": "T3",
+     "initiator": "Bearing vibration HIGH-HIGH",
+     "tag": "VSHH-1201",
+     "setpoint": "> 7.1 mm/s RMS",
+     "vote": "1oo2",
+     "effects": [
+      "EFF-1",
+      "EFF-2",
+      "EFF-4",
+      "EFF-5"
+     ]
+    },
+    {
+     "id": "T4",
+     "initiator": "Bearing temperature HIGH-HIGH",
+     "tag": "TSHH-1201",
+     "setpoint": "> 95 degC",
+     "vote": "1oo1",
+     "effects": [
+      "EFF-1",
+      "EFF-2",
+      "EFF-4"
+     ]
+    },
+    {
+     "id": "T5",
+     "initiator": "Motor overload / electrical fault",
+     "tag": "MPR-1201",
+     "setpoint": "MPR relay pickup",
+     "vote": "1oo1",
+     "effects": [
+      "EFF-1",
+      "EFF-2",
+      "EFF-4",
+      "EFF-5"
+     ]
+    },
+    {
+     "id": "T6",
+     "initiator": "Local/DCS emergency stop",
+     "tag": "HS-1201",
+     "setpoint": "Manual",
+     "vote": "1oo1",
+     "effects": [
+      "EFF-1",
+      "EFF-2",
+      "EFF-4"
+     ]
+    }
+   ],
+   "effects": {
+    "EFF-1": "TRIP PUMP MOTOR GA-1201A",
+    "EFF-2": "CLOSE DISCHARGE XV-1201",
+    "EFF-3": "OPEN MIN-FLOW FV-1201",
+    "EFF-4": "ANNUNCIATE ALARM ON DCS",
+    "EFF-5": "START STANDBY PUMP GA-1201B (auto)"
+   },
+   "permissives": [
+    {
+     "n": 1,
+     "condition": "Suction valve OPEN",
+     "signal": "ZSO-1201"
+    },
+    {
+     "n": 2,
+     "condition": "Seal flush established (dP > 1.5 bar)",
+     "signal": "PDI-1201"
+    },
+    {
+     "n": 3,
+     "condition": "Min-flow valve OPEN",
+     "signal": "ZSO-1202"
+    },
+    {
+     "n": 4,
+     "condition": "No active trip / reset done",
+     "signal": "DCS reset"
+    }
+   ],
+   "notes": [
+    "Trip set points are DUMMY training values.",
+    "On any trip the effects marked X are actuated by the Safety PLC and annunciated on the DCS.",
+    "A trip is latched and requires a manual reset once the cause has cleared and permissives are healthy.",
+    "Refer to P&ID; TJC-LLD-PID-1201 for instrument loops and the Datasheet for design limits of GA-1201A."
+   ],
+   "anchor": {
+    "doc_id": "Interlock Logic Diagram - GA-1201A",
+    "page": 1,
+    "section": "CAUSE & EFFECT MATRIX"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/Interlock Logic Diagram - GA-1201A.pdf"
+  },
+  {
+   "kind": "INTERLOCK",
+   "asset_tag": "EA-5601",
+   "doc_number": "TJC-LLD-IL-EA-5601",
+   "revision": "3",
+   "logic_no": "N/A (control loop only)",
+   "sil": "N/A",
+   "description": "SOLVENT HEATER EA-5601 - TEMPERATURE CONTROL (no dedicated ESD trip)",
+   "causes": [
+    {
+     "id": "C1",
+     "initiator": "Outlet temperature control",
+     "tag": "TIC-5602",
+     "setpoint": "SP 95 degC",
+     "vote": "control",
+     "effects": [
+      "EFF-1"
+     ]
+    },
+    {
+     "id": "A1",
+     "initiator": "Tube-side dP HIGH (fouling)",
+     "tag": "PDAH-5605",
+     "setpoint": "> 0.7 bar",
+     "vote": "alarm",
+     "effects": [
+      "EFF-2"
+     ]
+    },
+    {
+     "id": "R1",
+     "initiator": "Tube-side overpressure relief",
+     "tag": "PSV-5607",
+     "setpoint": "set 16 barg",
+     "vote": "mech",
+     "effects": [
+      "EFF-3"
+     ]
+    }
+   ],
+   "effects": {
+    "EFF-1": "MODULATE STEAM VALVE TV-5602",
+    "EFF-2": "ANNUNCIATE HIGH dP / FOULING ALARM",
+    "EFF-3": "MECHANICAL RELIEF VIA PSV-5607"
+   },
+   "permissives": [
+    {
+     "n": 1,
+     "condition": "Solvent flow established (from GA-5610)",
+     "signal": "FSL upstream"
+    },
+    {
+     "n": 2,
+     "condition": "Condensate trap draining (TI-5604 < steam T)",
+     "signal": "TI-5604"
+    }
+   ],
+   "notes": [
+    "Trip set points are DUMMY training values.",
+    "On any trip the effects marked X are actuated by the Safety PLC and annunciated on the DCS.",
+    "A trip is latched and requires a manual reset once the cause has cleared and permissives are healthy.",
+    "Refer to P&ID TJC-LLD-PID-5601 for instrument loops and the Datasheet for design limits of EA-5601."
+   ],
+   "anchor": {
+    "doc_id": "Interlock Logic Diagram EA-5601",
+    "page": 1,
+    "section": "CAUSE & EFFECT MATRIX"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/Interlock Logic Diagram EA-5601.pdf"
+  }
+ ],
+ "datasheet": [
+  {
+   "kind": "DATASHEET",
+   "asset_tag": "GA-1201A",
+   "doc_number": "TJC-LLD-DS-GA-1201A",
+   "revision": "3",
+   "params": {
+    "ITEM / TAG NO.": "GA-1201A",
+    "EQUIPMENT ID": "EQ-1000012011",
+    "EQUIPMENT NAME": "HEXANE FEED PUMP",
+    "TYPE": "Centrifugal Pump (API 610 OH2)",
+    "PLANT / UNIT": "LINEAR LOW DENSITY POLYETHYLENE (LLDPE) UNIT",
+    "AREA": "1200 - FEED PREPARATION & PURIFICATION",
+    "FUNCTIONAL LOC.": "TJC-LLD-1200-01",
+    "CRITICALITY": "HIGH CRITICAL",
+    "SERVICE": "Hexane feed transfer to 1st Polymerization",
+    "PUMP TYPE": "HORIZONTAL, END SUCTION, SINGLE STAGE",
+    "CASING MATERIAL": "ASTM A351 CF8M (SS316)",
+    "MODEL": "3x2x10 CDX-M",
+    "IMPELLER MATERIAL": "ASTM A351 CF8M (SS316)",
+    "RATED FLOW": "45 m3/h",
+    "SHAFT MATERIAL": "AISI 4140",
+    "RATED HEAD": "120 m",
+    "MECHANICAL SEAL": "JOHN CRANE T2100, SINGLE",
+    "NPSH REQUIRED": "3.5 m",
+    "SEAL FLUSH PLAN": "API PLAN 11 + PLAN 62 QUENCH",
+    "DIFF. PRESSURE": "8.6 bar",
+    "BEARING TYPE": "DE: 7310 BECBM / NDE: 6310 C3",
+    "PUMPING TEMP.": "40 degC",
+    "LUBRICATION": "OIL BATH, ISO VG 68",
+    "SPECIFIC GRAVITY": "0.66 (n-Hexane)",
+    "COUPLING": "FLEXIBLE SPACER, REXNORD",
+    "VISCOSITY": "0.31 cP",
+    "OUTPUT": "30 kW",
+    "ENCLOSURE": "TEFC IP55",
+    "POLES": "2 POLE",
+    "AREA CLASSIFICATION": "ZONE 2, IIA T3",
+    "SPEED": "2970 rpm",
+    "EX PROTECTION": "Ex nA IIC T3 Gc",
+    "VOLTAGE": "380 V / 3 Ph / 50 Hz",
+    "FRAME": "IEC 200L",
+    "RATED CURRENT": "56 A",
+    "WEIGHT (MOTOR)": "295 kg",
+    "INSULATION CLASS": "F (Temp rise B)",
+    "VENDOR / MANUFACTURER": "Vendor ABC",
+    "DRIVER SUPPLIER": "Supplier XYZ",
+    "DRIVER TYPE": "Electric Motor, TEFC",
+    "DATASHEET REV": "Rev 3 - ISSUED FOR OPERATION"
+   },
+   "anchor": {
+    "doc_id": "Equipment Datasheet - GA-1201A",
+    "page": 1,
+    "section": "DATA SHEET"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/Equipment Datasheet - GA-1201A.pdf"
+  },
+  {
+   "kind": "DATASHEET",
+   "asset_tag": "EA-5601",
+   "doc_number": "TJC-LLD-DS-EA-5601",
+   "revision": "3",
+   "params": {
+    "ITEM / TAG NO.": "EA-5601",
+    "EQUIPMENT ID": "EQ-1000056011",
+    "EQUIPMENT NAME": "SOLVENT HEATER",
+    "TYPE": "Shell & Tube Heat Exchanger (BEM)",
+    "PLANT / UNIT": "LINEAR LOW DENSITY POLYETHYLENE (LLDPE) UNIT",
+    "AREA": "5600 - SOLVENT RECOVERY SYSTEM",
+    "FUNCTIONAL LOC.": "TJC-LLD-5600-01",
+    "CRITICALITY": "LOW CRITICAL",
+    "SERVICE": "Heat recovered hexane solvent using MP st",
+    "TEMA TYPE": "BEM, HORIZONTAL",
+    "TUBE LENGTH": "6000 mm",
+    "ITEM NO.": "EA-5601",
+    "NO. OF TUBES": "246",
+    "DUTY": "1.85 MW",
+    "TUBE PASSES": "2",
+    "SHELL SIDE FLUID": "MP STEAM 10 barg",
+    "TUBE MATERIAL": "SS304L",
+    "TUBE SIDE FLUID": "HEXANE SOLVENT",
+    "SHELL MATERIAL": "SA-516 Gr.70",
+    "SHELL DESIGN P/T": "13 barg / 200 degC",
+    "TUBESHEET": "SA-516-70 + SS304 overlay",
+    "TUBE DESIGN P/T": "16 barg / 200 degC",
+    "BAFFLE": "SEGMENTAL 25% CUT",
+    "GASKET": "SPIRAL WOUND SS316/GRAPHITE",
+    "HEAT TRANSFER AREA": "88 m2",
+    "STEAM CONSUMPTION": "3100 kg/h",
+    "CLEAN U": "620 W/m2K",
+    "SOLVENT INLET T": "45 degC",
+    "SERVICE U": "480 W/m2K",
+    "SOLVENT OUTLET T": "95 degC",
+    "FOULING (TUBE)": "0.00035 m2K/W",
+    "PRESSURE DROP (TUBE)": "0.35 bar",
+    "VENDOR / MANUFACTURER": "Vendor ABC",
+    "DRIVER SUPPLIER": "Supplier XYZ",
+    "DRIVER TYPE": "None (static)",
+    "DATASHEET REV": "Rev 3 - ISSUED FOR OPERATION"
+   },
+   "anchor": {
+    "doc_id": "Equipment Datasheet - EA-5601",
+    "page": 1,
+    "section": "DATA SHEET"
+   },
+   "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/Equipment Datasheet - EA-5601.pdf"
+  }
+ ]
+}

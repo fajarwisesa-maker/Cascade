@@ -1,0 +1,540 @@
+[
+ {
+  "chain_id": "CH-GA-1201A-01",
+  "tag": "GA-1201A",
+  "equipment": "HEXANE FEED PUMP",
+  "root_mechanism": "MISALIGNMENT",
+  "wos": [
+   "WO-240003",
+   "WO-240013",
+   "WO-240004",
+   "WO-240007"
+  ],
+  "first_seen": "2025-02-23",
+  "last_seen": "2025-08-25",
+  "span_days": 182,
+  "n_events": 4,
+  "total_downtime_h": 6.5,
+  "total_cost_idr": 12630000.0,
+  "confidence": 0.71,
+  "loss_of_containment": false,
+  "events": [
+   {
+    "wo": "WO-240003",
+    "date": "2025-02-23 15:14:00",
+    "work_type": "Corrective",
+    "primary_mode": "STRUCTURAL_SUPPORT",
+    "causal_mode": "MISALIGNMENT",
+    "problem": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+    "root_cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+    "action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to 1.9 mm/s",
+    "downtime_h": null,
+    "cost_idr": null,
+    "related_interlock": "nan",
+    "components": [
+     "baseplate_grout",
+     "motor"
+    ]
+   },
+   {
+    "wo": "WO-240013",
+    "date": "2025-03-19 10:21:00",
+    "work_type": "Corrective",
+    "primary_mode": "STRUCTURAL_SUPPORT",
+    "causal_mode": "VIBRATION",
+    "problem": "Hairline crack in epoxy grout under baseplate edge",
+    "root_cause": "Vibration-induced grout fatigue at pump end",
+    "action": "Chipped out loose grout and re-grouted with epoxy, torqued hold-down bolts",
+    "downtime_h": null,
+    "cost_idr": null,
+    "related_interlock": "nan",
+    "components": [
+     "baseplate_grout"
+    ]
+   },
+   {
+    "wo": "WO-240004",
+    "date": "2025-03-29 08:56:00",
+    "work_type": "Corrective",
+    "primary_mode": "BEARING_FAILURE",
+    "causal_mode": "MISALIGNMENT",
+    "problem": "Bearing DE noisy with rising temperature TI-1201 trend",
+    "root_cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+    "action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68",
+    "downtime_h": null,
+    "cost_idr": null,
+    "related_interlock": "nan",
+    "components": [
+     "bearing_DE"
+    ]
+   },
+   {
+    "wo": "WO-240007",
+    "date": "2025-08-25 11:58:00",
+    "work_type": "Corrective",
+    "primary_mode": "COUPLING_FAILURE",
+    "causal_mode": "MISALIGNMENT",
+    "problem": "Abnormal noise from coupling area, guard vibration",
+    "root_cause": "Rexnord coupling element cracked from repeated misalignment cycles",
+    "action": "Replaced coupling spacer element, re-aligned, re-fit guard",
+    "downtime_h": 6.5,
+    "cost_idr": 12630000.0,
+    "related_interlock": "SEQ-1201",
+    "components": [
+     "coupling"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240003",
+    "to": "WO-240013",
+    "score": 0.752,
+    "factors": {
+     "mechanism": 0.9,
+     "component": 1.0,
+     "lexical": 0.05,
+     "recurrence_cue": 1.0,
+     "temporal": 0.882,
+     "gap_days": 23
+    },
+    "rationale": "structural support is a known consequence of misalignment; shared term(s): vibration"
+   },
+   {
+    "frm": "WO-240003",
+    "to": "WO-240004",
+    "score": 0.719,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 0.6,
+     "lexical": 0.019,
+     "recurrence_cue": 1.0,
+     "temporal": 0.835,
+     "gap_days": 33
+    },
+    "rationale": "both root causes name misalignment"
+   },
+   {
+    "frm": "WO-240004",
+    "to": "WO-240007",
+    "score": 0.66,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 0.6,
+     "lexical": 0.019,
+     "recurrence_cue": 1.0,
+     "temporal": 0.442,
+     "gap_days": 149
+    },
+    "rationale": "both root causes name misalignment"
+   }
+  ],
+  "knowledge_links": [
+   {
+    "opl_no": "OPL-GA-1201A-03",
+    "title": "Pump-Motor Alignment Check (Laser)",
+    "relevance": 0.367,
+    "matched_terms": [
+     "align",
+     "alignment",
+     "bearing",
+     "coupling",
+     "laser",
+     "shim",
+     "vibration"
+    ],
+    "score": 0.828,
+    "doc_id": "OPL-GA-1201A-03 - Pump_Motor_Alignment_Check_Laser_edited",
+    "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-03 - Pump_Motor_Alignment_Check_Laser_edited.pdf",
+    "steps": {
+     "opl_no": "OPL-GA-1201A-03",
+     "section": "4. DETAILED PROCEDURE / STEPS",
+     "page": 1,
+     "chunk_id": "OPL-GA-1201A-03 - Pump_Motor_Alignment_Check_Laser_edited::p1::05",
+     "text": "Step   Action   Check / Acceptance\n1   Isolate and LOTO the motor, remove coupling guard   Isolation & LOTO verified\n2   Mount laser alignment brackets across the coupling spacer   Parts match BOM / spec\n3   Rotate 0-90-180-270 deg and capture readings   Torque / clearance to spec\n4   Target angular < 0.05 mm/100 mm and offset < 0.05 mm   No leak / smooth operation\n5   Add/remove shims under motor feet, re-check, and record the alignment report   Record in equipment history"
+    },
+    "classification": "Improvement",
+    "date_shared": "2026-03-30",
+    "relation": "written_after_chain",
+    "lesson_latency_days": 400,
+    "days_earlier_if_detected_at_event_2": 376,
+    "cites_chain_work_orders": 2
+   },
+   {
+    "opl_no": "OPL-GA-1201A-07",
+    "title": "Vibration Trend Monitoring & Alarm Response (VSHH-1201)",
+    "relevance": 0.268,
+    "matched_terms": [
+     "bearing",
+     "vibration"
+    ],
+    "score": 0.365,
+    "doc_id": "OPL-GA-1201A-07 - Vibration_Trend_Monitoring_Alarm_Respons_EDITED",
+    "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-07 - Vibration_Trend_Monitoring_Alarm_Respons_EDITED.pdf",
+    "steps": {
+     "opl_no": "OPL-GA-1201A-07",
+     "section": "4. DETAILED PROCEDURE / STEPS",
+     "page": 1,
+     "chunk_id": "OPL-GA-1201A-07 - Vibration_Trend_Monitoring_Alarm_Respons_EDITED::p1::05",
+     "text": "Step   Action   Check / Acceptance\n1   Record VT-1201 on the daily PdM route in mm/s RMS   Loop isolated / under permit\n2   Note alarm at 4.5 mm/s and trip at 7.1 mm/s (VSHH-1201)   Reference standard traceable\n3   A rise greater than 1 mm/s within a week = plan a bearing inspection   As-found & as-left recorded\n4   Correlate the vibration rise with TI-1201 bearing temperature   Trip / control action verified\n5   Escalate to reliability engineer if the 1x running-speed component dominates   Return to service confirmed"
+    },
+    "classification": "Improvement",
+    "date_shared": "2026-04-15",
+    "relation": "written_after_chain",
+    "lesson_latency_days": 416,
+    "days_earlier_if_detected_at_event_2": 392,
+    "cites_chain_work_orders": 0
+   },
+   {
+    "opl_no": "OPL-GA-1201A-06",
+    "title": "Start-Up & Priming Procedure GA-1201A",
+    "relevance": 0.088,
+    "matched_terms": [
+     "vibration"
+    ],
+    "score": 0.104,
+    "doc_id": "OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE",
+    "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE.pdf",
+    "steps": {
+     "opl_no": "OPL-GA-1201A-06",
+     "section": "4. DETAILED PROCEDURE / STEPS",
+     "page": 1,
+     "chunk_id": "OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE::p1::05",
+     "text": "Step   Action   Check / Acceptance\n1   Open the suction valve fully and vent the casing air via N5 vent   Permit valid & briefed\n2   Establish seal flush Plan 11 and confirm PDI-1201 dP   Parameter within limit\n3   Confirm the min-flow recycle line FV-1201 is open   Interlock status confirmed\n4   Bump-start the motor and check correct rotation direction   Change logged on DCS\n5   Start the motor and confirm PIC-1201 pressure and vibration settle within 5 s   Handover to next shift"
+    },
+    "classification": "Basic Knowledge",
+    "date_shared": "2026-04-11",
+    "relation": "written_after_chain",
+    "lesson_latency_days": 412,
+    "days_earlier_if_detected_at_event_2": 388,
+    "cites_chain_work_orders": 2
+   }
+  ],
+  "knowledge_existed_before_first_event": false,
+  "detectable_on": "2025-03-19",
+  "first_lesson_shared_on": "2026-03-30",
+  "lesson_latency_days": 400,
+  "events_before_lesson": 4
+ },
+ {
+  "chain_id": "CH-EA-5601-03",
+  "tag": "EA-5601",
+  "equipment": "SOLVENT HEATER",
+  "root_mechanism": "FOULING",
+  "wos": [
+   "WO-240115",
+   "WO-240110",
+   "WO-240113"
+  ],
+  "first_seen": "2024-09-29",
+  "last_seen": "2025-03-05",
+  "span_days": 156,
+  "n_events": 3,
+  "total_downtime_h": 46.0,
+  "total_cost_idr": 48812000.0,
+  "confidence": 0.629,
+  "loss_of_containment": false,
+  "events": [
+   {
+    "wo": "WO-240115",
+    "date": "2024-09-29 08:10:00",
+    "work_type": "Corrective",
+    "primary_mode": "INSTRUMENT_DRIFT",
+    "causal_mode": "FOULING",
+    "problem": "Erratic tube dP reading",
+    "root_cause": "Impulse lines plugged with fines",
+    "action": "Cleaned and re-zeroed PDT-5605 transmitter",
+    "downtime_h": 0.0,
+    "cost_idr": 651000.0,
+    "related_interlock": "-",
+    "components": [
+     "tube_bundle",
+     "instrument"
+    ]
+   },
+   {
+    "wo": "WO-240110",
+    "date": "2024-12-13 09:06:00",
+    "work_type": "Corrective",
+    "primary_mode": "GASKET_LEAK",
+    "causal_mode": "FOULING",
+    "problem": "High tube dP PDT-5605, low solvent outlet temperature",
+    "root_cause": "Hexane fouling / polymer fines deposit on tube bores",
+    "action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed",
+    "downtime_h": 16.0,
+    "cost_idr": 7367000.0,
+    "related_interlock": "-",
+    "components": [
+     "tube_bundle"
+    ]
+   },
+   {
+    "wo": "WO-240113",
+    "date": "2025-03-05 06:49:00",
+    "work_type": "Overhaul",
+    "primary_mode": "TUBE_LEAK",
+    "causal_mode": "",
+    "problem": "Water found in solvent, rising outlet temperature",
+    "root_cause": "Two tubes leaking at tube-to-tubesheet joint",
+    "action": "Located and plugged 2 tubes both ends, hydrotest passed",
+    "downtime_h": 30.0,
+    "cost_idr": 40794000.0,
+    "related_interlock": "-",
+    "components": [
+     "tube_bundle"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240115",
+    "to": "WO-240110",
+    "score": 0.683,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 1.0,
+     "lexical": 0.167,
+     "recurrence_cue": 0.0,
+     "temporal": 0.663,
+     "gap_days": 75
+    },
+    "rationale": "both root causes name fouling"
+   },
+   {
+    "frm": "WO-240115",
+    "to": "WO-240113",
+    "score": 0.574,
+    "factors": {
+     "mechanism": 0.9,
+     "component": 1.0,
+     "lexical": 0.0,
+     "recurrence_cue": 0.0,
+     "temporal": 0.425,
+     "gap_days": 156
+    },
+    "rationale": "tube leak is a known consequence of fouling; shared term(s): plugged"
+   }
+  ],
+  "knowledge_links": [
+   {
+    "opl_no": "OPL-EA-5601-05",
+    "title": "Tube Leak Detection & Plugging",
+    "relevance": 0.375,
+    "matched_terms": [
+     "leak",
+     "plug",
+     "plugging",
+     "tube"
+    ],
+    "score": 0.646,
+    "doc_id": "OPL-EA-5601-05 - Tube_Leak_Detection_Plugging",
+    "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-05 - Tube_Leak_Detection_Plugging.pdf",
+    "steps": {
+     "opl_no": "OPL-EA-5601-05",
+     "section": "4. DETAILED PROCEDURE / STEPS",
+     "page": 1,
+     "chunk_id": "OPL-EA-5601-05 - Tube_Leak_Detection_Plugging::p1::04",
+     "text": "Step   Action   Check / Acceptance\n1   Isolate and hydrotest the shell side to find the leak   Isolation & LOTO verified\n2   Bubble-test to identify the specific leaking tube   Parts match BOM / spec\n3   Plug both ends of the tube with tapered plugs   Torque / clearance to spec\n4   Record the plugged-tube count (maximum 5 % of tubes)   No leak / smooth operation\n5   Plan bundle replacement if the plugging limit is reached   Record in equipment history"
+    },
+    "classification": "Trouble Case",
+    "date_shared": "2026-05-21",
+    "relation": "written_after_chain",
+    "lesson_latency_days": 599,
+    "days_earlier_if_detected_at_event_2": 524,
+    "cites_chain_work_orders": 1
+   },
+   {
+    "opl_no": "OPL-EA-5601-01",
+    "title": "Tube-Side Cleaning (Hydrojetting)",
+    "relevance": 0.236,
+    "matched_terms": [
+     "blockage",
+     "box",
+     "clean",
+     "foul",
+     "gasket",
+     "hydrojet",
+     "tube"
+    ],
+    "score": 0.532,
+    "doc_id": "OPL-EA-5601-01 - Tube_Side_Cleaning_Hydrojetting",
+    "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-01 - Tube_Side_Cleaning_Hydrojetting.pdf",
+    "steps": {
+     "opl_no": "OPL-EA-5601-01",
+     "section": "4. DETAILED PROCEDURE / STEPS",
+     "page": 1,
+     "chunk_id": "OPL-EA-5601-01 - Tube_Side_Cleaning_Hydrojetting::p1::04",
+     "text": "Step   Action   Check / Acceptance\n1   Isolate and drain both sides, then purge with nitrogen   Isolation & LOTO verified\n2   Open the channel cover and remove the old gasket   Parts match BOM / spec\n3   Hydrojet the tube bores and inspect for pitting/erosion   Torque / clearance to spec\n4   Verify tube-side dP restored and no residual blockage   No leak / smooth operation\n5   Re-gasket with new SW SS316 gasket and box up to torque   Record in equipment history"
+    },
+    "classification": "Trouble Case",
+    "date_shared": "2026-05-05",
+    "relation": "written_after_chain",
+    "lesson_latency_days": 583,
+    "days_earlier_if_detected_at_event_2": 508,
+    "cites_chain_work_orders": 1
+   },
+   {
+    "opl_no": "OPL-EA-5601-06",
+    "title": "Fouling Trend & Cleaning Schedule (PDT-5605)",
+    "relevance": 0.221,
+    "matched_terms": [
+     "clean",
+     "foul",
+     "tube"
+    ],
+    "score": 0.341,
+    "doc_id": "OPL-EA-5601-06 - Fouling_Trend_Cleaning_Schedule_PDT_5605",
+    "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_05_EA-5601_SOLVENT_HEATER/OPL (One Point Lessons)/OPL-EA-5601-06 - Fouling_Trend_Cleaning_Schedule_PDT_5605.pdf",
+    "steps": {
+     "opl_no": "OPL-EA-5601-06",
+     "section": "4. DETAILED PROCEDURE / STEPS",
+     "page": 1,
+     "chunk_id": "OPL-EA-5601-06 - Fouling_Trend_Cleaning_Schedule_PDT_5605::p1::04",
+     "text": "Step   Action   Check / Acceptance\n1   Log PDT-5605 differential pressure weekly   Loop isolated / under permit\n2   Note the PDAH-5605 fouling alarm at 0.7 bar dP   Reference standard traceable\n3   Correlate rising dP with any outlet-temperature shortfall   As-found & as-left recorded\n4   Plan cleaning before the duty loss becomes critical   Trip / control action verified\n5   Feed the trend into the exchanger cleaning program   Return to service confirmed"
+    },
+    "classification": "Improvement",
+    "date_shared": "2026-05-25",
+    "relation": "written_after_chain",
+    "lesson_latency_days": 603,
+    "days_earlier_if_detected_at_event_2": 528,
+    "cites_chain_work_orders": 1
+   }
+  ],
+  "knowledge_existed_before_first_event": false,
+  "detectable_on": "2024-12-13",
+  "first_lesson_shared_on": "2026-05-05",
+  "lesson_latency_days": 583,
+  "events_before_lesson": 3
+ },
+ {
+  "chain_id": "CH-GA-1201A-02",
+  "tag": "GA-1201A",
+  "equipment": "HEXANE FEED PUMP",
+  "root_mechanism": "FOULING",
+  "wos": [
+   "WO-240008",
+   "WO-240002"
+  ],
+  "first_seen": "2024-11-05",
+  "last_seen": "2025-08-29",
+  "span_days": 296,
+  "n_events": 2,
+  "total_downtime_h": 0,
+  "total_cost_idr": 588000.0,
+  "confidence": 0.525,
+  "loss_of_containment": true,
+  "events": [
+   {
+    "wo": "WO-240008",
+    "date": "2024-11-05 07:58:00",
+    "work_type": "Corrective",
+    "primary_mode": "INSTRUMENT_DRIFT",
+    "causal_mode": "FOULING",
+    "problem": "PDI-1201 reading erratic, seal-flush low alarm nuisance-tripping",
+    "root_cause": "Impulse lines fouled with hexane residue/polymer fines",
+    "action": "Cleaned impulse lines and re-zeroed PDI-1201 transmitter",
+    "downtime_h": 0.0,
+    "cost_idr": 588000.0,
+    "related_interlock": "SEQ-1201",
+    "components": [
+     "instrument"
+    ]
+   },
+   {
+    "wo": "WO-240002",
+    "date": "2025-08-29 06:36:00",
+    "work_type": "Corrective",
+    "primary_mode": "SEAL_LEAK",
+    "causal_mode": "FOULING",
+    "problem": "Hexane leak observed at GA-1201A seal gland during operation, seal drain flowing",
+    "root_cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face to run dry and score",
+    "action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, verified PDI-1201 dP",
+    "downtime_h": null,
+    "cost_idr": null,
+    "related_interlock": "nan",
+    "components": [
+     "mechanical_seal",
+     "seal_flush"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240008",
+    "to": "WO-240002",
+    "score": 0.525,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 0.6,
+     "lexical": 0.028,
+     "recurrence_cue": 0.0,
+     "temporal": 0.198,
+     "gap_days": 296
+    },
+    "rationale": "both root causes name fouling"
+   }
+  ],
+  "knowledge_links": [
+   {
+    "opl_no": "OPL-GA-1201A-01",
+    "title": "Mechanical Seal Flush (API Plan 11) Verification",
+    "relevance": 0.516,
+    "matched_terms": [
+     "flush",
+     "gland",
+     "orifice",
+     "plan 11",
+     "plug",
+     "seal"
+    ],
+    "score": 1.073,
+    "doc_id": "OPL-GA-1201A-01 - Mechanical_Seal_Flush_API_Plan_11_Verifi_edited_one_page",
+    "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-01 - Mechanical_Seal_Flush_API_Plan_11_Verifi_edited_one_page.pdf",
+    "steps": {
+     "opl_no": "OPL-GA-1201A-01",
+     "section": "4. DETAILED PROCEDURE / STEPS",
+     "page": 1,
+     "chunk_id": "OPL-GA-1201A-01 - Mechanical_Seal_Flush_API_Plan_11_Verifi_edited_one_page::p1::05",
+     "text": "Step   Action   Check / Acceptance\n1   Line up discharge flush to seal chamber and open flush isolation   Isolation & LOTO verified\n2   Check PDI-1201 reads 1.5-2.5 bar dP across the flush orifice RO-1201   Parts match BOM / spec\n3   Verify no visible leak or drip at the gland / seal drain   Torque / clearance to spec\n4   If dP low, isolate and inspect orifice RO-1201 for plugging by polymer/dirt   No leak / smooth operation\n5   Confirm quench (Plan 62) N2/steam is lined up to the outboard side   Record in equipment history"
+    },
+    "classification": "Trouble Case",
+    "date_shared": "2026-03-22",
+    "relation": "written_after_chain",
+    "lesson_latency_days": 502,
+    "days_earlier_if_detected_at_event_2": 205,
+    "cites_chain_work_orders": 1
+   },
+   {
+    "opl_no": "OPL-GA-1201A-06",
+    "title": "Start-Up & Priming Procedure GA-1201A",
+    "relevance": 0.208,
+    "matched_terms": [
+     "flush",
+     "plan 11",
+     "seal"
+    ],
+    "score": 0.321,
+    "doc_id": "OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE",
+    "source_path": "/tmp/claude-0/-home-claude/87223855-0a75-5709-b12f-32624d036336/scratchpad/case1/Case 1_ Manufacturing Knowledge Hub/Set_01_GA-1201A_HEXANE_FEED_PUMP/One Point Lesson/OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE.pdf",
+    "steps": {
+     "opl_no": "OPL-GA-1201A-06",
+     "section": "4. DETAILED PROCEDURE / STEPS",
+     "page": 1,
+     "chunk_id": "OPL-GA-1201A-06 - Start_Up_Priming_Procedure_GA_1201A_EDITED_ONE_PAGE::p1::05",
+     "text": "Step   Action   Check / Acceptance\n1   Open the suction valve fully and vent the casing air via N5 vent   Permit valid & briefed\n2   Establish seal flush Plan 11 and confirm PDI-1201 dP   Parameter within limit\n3   Confirm the min-flow recycle line FV-1201 is open   Interlock status confirmed\n4   Bump-start the motor and check correct rotation direction   Change logged on DCS\n5   Start the motor and confirm PIC-1201 pressure and vibration settle within 5 s   Handover to next shift"
+    },
+    "classification": "Basic Knowledge",
+    "date_shared": "2026-04-11",
+    "relation": "written_after_chain",
+    "lesson_latency_days": 522,
+    "days_earlier_if_detected_at_event_2": 225,
+    "cites_chain_work_orders": 1
+   }
+  ],
+  "knowledge_existed_before_first_event": false,
+  "detectable_on": "2025-08-29",
+  "first_lesson_shared_on": "2026-03-22",
+  "lesson_latency_days": 502,
+  "events_before_lesson": 2
+ }
+]

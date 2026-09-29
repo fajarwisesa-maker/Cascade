@@ -1,0 +1,49 @@
+==========================================================================
+GOLDEN-SET VALIDATION — causal layer
+==========================================================================
+
+[1] Expected chains recovered
+  [PASS] misalignment cascade on GA-1201A
+         expected ['WO-240003', 'WO-240013', 'WO-240004', 'WO-240007']
+         chain_id {'CH-GA-1201A-01'}
+  [PASS] polymer-fines fouling to tube leak on EA-5601
+         expected ['WO-240115', 'WO-240110', 'WO-240113']
+         chain_id {'CH-EA-5601-03'}
+  [PASS] small-bore fouling to hexane seal leak on GA-1201A
+         expected ['WO-240008', 'WO-240002']
+         chain_id {'CH-GA-1201A-02'}
+  chain recall: 3/3
+
+[2] Link precision
+  links produced : 6
+  true positives : 6
+  false positives: 0  
+  precision      : 100%
+
+[3] Forbidden links rejected
+  [PASS] WO-240011 -> WO-240003  (planned T/A overhaul used as a cause)
+  [PASS] WO-240009 -> WO-240008  (loop tuning cannot plug an impulse line)
+  [PASS] WO-240008 -> WO-240006  (proof-test finding is surveillance, not damage)
+
+[4] No planned surveillance work inside a chain
+  [PASS] 0 planned WO inside chains []
+
+[5] Knowledge that existed, per chain
+  [PASS] CH-GA-1201A-01: 3 approved OPL matched (top: OPL-GA-1201A-03)
+  [PASS] CH-EA-5601-03: 3 approved OPL matched (top: OPL-EA-5601-05)
+  [PASS] CH-GA-1201A-02: 3 approved OPL matched (top: OPL-GA-1201A-01)
+
+[6] Measured impact of detected chains
+  chains 3 | events 9 | downtime 52.5 h | cost Rp62,030,000
+   CH-GA-1201A-01: 4 events over 182d, 6.5 h, Rp12,630,000
+      first: 2025-02-23 Angular misalignment 0.12 mm/100mm after foundation settle
+      last : 2025-08-25 Rexnord coupling element cracked from repeated misalignmen
+   CH-EA-5601-03: 3 events over 156d, 46.0 h, Rp48,812,000
+      first: 2024-09-29 Impulse lines plugged with fines
+      last : 2025-03-05 Two tubes leaking at tube-to-tubesheet joint
+   CH-GA-1201A-02: 2 events over 296d, 0.0 h, Rp588,000  [loss of containment]
+      first: 2024-11-05 Impulse lines fouled with hexane residue/polymer fines
+      last : 2025-08-29 API Plan 11 flush orifice RO-1201 partially plugged causin
+
+[7] Cross-asset pattern (same mechanism, different unit)
+  FOULING: appears on ['EA-5601', 'GA-1201A'] — plant-wide mechanism, not an asset problem

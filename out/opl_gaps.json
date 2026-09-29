@@ -1,0 +1,26 @@
+[
+ {
+  "tag": "EA-5601",
+  "failure_mode": "INSTRUMENT_DRIFT",
+  "occurrences": 1,
+  "covered_by_opl": false
+ },
+ {
+  "tag": "EA-5601",
+  "failure_mode": "STRUCTURAL_SUPPORT",
+  "occurrences": 1,
+  "covered_by_opl": false
+ },
+ {
+  "tag": "EA-5601",
+  "failure_mode": "CONTROL_LOOP",
+  "occurrences": 1,
+  "covered_by_opl": false
+ },
+ {
+  "tag": "GA-1201A",
+  "failure_mode": "INSTRUMENT_DRIFT",
+  "occurrences": 3,
+  "covered_by_opl": false
+ }
+]
