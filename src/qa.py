@@ -47,6 +47,21 @@ SAFETY_TAXONOMY = {
 DEVIATION = re.compile(r"\b(bypass|by-pass|defeat|override|jumper(ed)?( out)?|jump out|inhibit|"
                        r"disable|force(d)? (the )?(interlock|trip)|matikan interlock|"
                        r"put \w+ in bypass|mask (the )?(trip|alarm))\b", re.I)
+# Changing a protective setting is a deviation too (held-out #3): it needs MOC.
+SETPOINT_CHANGE = re.compile(
+    r"\b(raise|increase|lower|decrease|change|adjust|move|widen|reset the setting|naikkan|turunkan|ubah)\b"
+    r"[^.?!]{0,40}\b(trip|set ?point|setting|alarm( limit)?|set pressure)\b"
+    r"(?=[^.?!]*(\bto \d|\bhigher\b|\blower\b|\bup\b|\bdown\b|so (it|we)|nuisance|\bmore\b|\bless\b))", re.I)
+PROTECTION_REMOVAL = re.compile(
+    r"\b(remove|break|cut|lepas\w*|open)\b[^.?!]{0,25}\bcar[- ]?seal|"
+    r"\bblock[- ]?in\b[^.?!]{0,25}\b(psv|relief)|\bisolate\b[^.?!]{0,25}\b(psv|relief valve)", re.I)
+NEGATED = re.compile(r"\b(won'?t|will not|do not|don'?t|never|not going to|tidak|tanpa)\s+(\w+\s+){0,2}$", re.I)
+# Asking CASCADE to judge a live condition. It never does.
+JUDGEMENT_CUE = re.compile(r"\b(is it safe|safe to|still safe|ok to (run|continue|keep)|"
+                           r"can i keep (it )?running|keep running|aman( tidak)?|masih aman|boleh jalan)\b", re.I)
+# History / cost questions belong to work orders, never to the datasheet.
+HISTORY_CUE = re.compile(r"\b(cost|biaya|how much did|downtime|how long was|when did|what happened|"
+                         r"last time|history|riwayat|kapan)\b", re.I)
 PARAM_CUE = re.compile(r"\b(what is|what's|berapa|set ?point|setting|set pressure|value|rated|design|"
                        r"spec\w*|material|limit|alarm at|trip at|capacity|nilai|how many|how much|"
                        r"number of|what oil|which oil|goes in|"
@@ -199,12 +214,23 @@ class Engine:
                 tags.add(il["logic_no"].upper())
         return tags
 
+    @staticmethod
+    def _unnegated(pat: re.Pattern, q: str) -> bool:
+        """True if the pattern occurs at least once WITHOUT a negation just
+        before it ("I won't bypass anything" is not a bypass request)."""
+        return any(not NEGATED.search(q[:m.start()]) for m in pat.finditer(q))
+
     def classify(self, q: str) -> str:
         named = {f"{p.upper()}-{n.upper()}" for p, n in TAG_RE.findall(q)}
-        if DEVIATION.search(q) and (
-                re.search(r"interlock|trip|alarm|safety|sis|permissive|min-?flow|psv|relief", q, re.I)
-                or named & self.safeguard_tags()):
+        guarded = bool(re.search(r"interlock|trip|alarm|safety|sis|permissive|min-?flow|psv|relief", q, re.I)
+                       or named & self.safeguard_tags())
+        if (self._unnegated(DEVIATION, q) and guarded) or self._unnegated(PROTECTION_REMOVAL, q) \
+                or (self._unnegated(SETPOINT_CHANGE, q) and guarded):
             return "DEVIATION"
+        if JUDGEMENT_CUE.search(q):
+            return "JUDGEMENT"
+        if HISTORY_CUE.search(q):
+            return "RECURRING"
         if TRIP_CUE.search(q) and PARAM_CUE.search(q) and not ACTION_CUE.search(q):
             return "PARAMETER"
         if TRIP_CUE.search(q):
@@ -227,6 +253,10 @@ class Engine:
         flags = [name for name, pat in SAFETY_TAXONOMY.items() if re.search(pat, q, re.I)]
         if intent in ("TRIP_RESTART", "DEVIATION") and not flags:
             flags.append("trip / shutdown")
+        if intent == "JUDGEMENT":
+            flags.append("live-condition judgement requested")
+        if intent == "DEVIATION" and (SETPOINT_CHANGE.search(q) or PROTECTION_REMOVAL.search(q)):
+            flags.append("change to a protective setting / device")
         return flags
 
     # ------------------------------------------------------ evidence builders
@@ -343,8 +373,9 @@ class Engine:
             weid = self.ev_wo(E, e["wo"])
             wo_eids.append(weid)
             dt = f", {e['downtime_h']:g} h down" if e["downtime_h"] else ""
+            cost = f", Rp {e['cost_idr']:,.0f}" if e.get("cost_idr") else ""
             sec.items.append(Item(f"{e['date'][:10]} · {e['wo']} · {e['problem']} — root cause: "
-                                  f"{e['root_cause']}{dt}", [weid, cid]))
+                                  f"{e['root_cause']}{dt}{cost}", [weid, cid]))
         if headline_only:
             return sec
         # why these are linked
@@ -695,21 +726,70 @@ class Engine:
                  "Current process values (no live historian / DCS connection in this pilot)"]
         return None
 
+    GUARD_TEXT = re.compile(r"defeat|bypass|override|never block|car-sealed|car seal|never isolat|"
+                            r"without an authori[sz]ed", re.I)
+
     def a_deviation(self, q, tag, E, S):
+        named = {f"{p.upper()}-{n.upper()}" for p, n in TAG_RE.findall(q)}
         sec = Section("refusal", "Deviation from an approved safeguard — CASCADE will not advise a workaround")
+        cands = []   # (priority, opl_no, locator, text)
         for o in self.opl.values():
             if o["asset_tag"] != tag:
                 continue
+            about_named = any(t in o["title"] or t in json.dumps(o["steps"]) for t in named)
             for s in o["steps"]:
-                if re.search(r"defeat|bypass|override", s["action"], re.I):
-                    eid = self.ev_opl(E, o["opl_no"], f"step {s['n']}")
-                    sec.items.append(Item(s["action"], [eid], verbatim=True))
+                if self.GUARD_TEXT.search(s["action"]):
+                    cands.append((0 if about_named else 1, o["opl_no"], f"step {s['n']}", s["action"]))
             for s in o["safety"]:
-                shown = {ws(i.text) for i in sec.items}
-                if re.search(r"defeat|override", s, re.I) and ws(s) not in shown and len(sec.items) < 3:
-                    eid = self.ev_opl(E, o["opl_no"], "2. SAFETY PRECAUTIONS")
-                    sec.items.append(Item(s, [eid], verbatim=True))
+                if re.search(r"defeat|override", s, re.I):
+                    cands.append((2, o["opl_no"], "2. SAFETY PRECAUTIONS", s))
+        seen = set()
+        for _, opl_no, loc, text in sorted(cands):
+            if ws(text) in seen or len(sec.items) >= 3:
+                continue
+            seen.add(ws(text))
+            sec.items.append(Item(text, [self.ev_opl(E, opl_no, loc)], verbatim=True))
         S.append(sec)
+        # A set-point change request: show the APPROVED value, unchanged.
+        il = self.il.get(tag)
+        if il and SETPOINT_CHANGE.search(q):
+            rows = [c for c in il["causes"] if c["tag"] in named]
+            if rows:
+                cur = Section("parameter", "Approved set point — changing it requires Management of Change")
+                for c in rows:
+                    cur.items.append(Item(f"{c['id']} · {c['initiator']} · {c['tag']} · {sp(c)} · vote {c['vote']}",
+                                          [self.ev_il(E, tag, f"C&E row {c['id']}")], verbatim=True))
+                S.append(cur)
+        return None
+
+    def a_judgement(self, q, tag, E, S, notv):
+        """'Is it safe to…' — show approved limits and the response procedure.
+        Never a verdict: the live condition is not visible to CASCADE."""
+        il = self.il.get(tag)
+        cause = None
+        if il:
+            for pre, num in TAG_RE.findall(q):
+                cause = next((c for c in il["causes"] if c["tag"] == f"{pre.upper()}-{num.upper()}"), None) or cause
+            if not cause:
+                for pat, prefix in INITIATOR_HINTS:
+                    if re.search(pat, q, re.I):
+                        cause = next((c for c in il["causes"] if c["tag"].startswith(prefix)), None)
+                        if cause:
+                            break
+        if not cause:
+            return "no_limit"
+        sec = Section("parameter", f"Approved limits for {cause['tag']} — compare with your live reading")
+        sec.items.append(Item(f"{cause['id']} · {cause['initiator']} · {cause['tag']} · {sp(cause)} · "
+                              f"vote {cause['vote']}", [self.ev_il(E, tag, f"C&E row {cause['id']}")],
+                              verbatim=True))
+        self._also_stated(E, sec, tag, cause["tag"])
+        S.append(sec)
+        prefer = INITIATOR_OPL.get(cause["tag"].split("-")[0], "")
+        opl_no = self.best_opl(tag, q, prefer)
+        if opl_no:
+            S.append(self.steps_section(E, opl_no, "Approved response procedure (verbatim)"))
+        notv += ["Whether the current condition is safe — CASCADE never makes that judgement",
+                 "Your reading's trend and rate of change (no live historian / DCS connection in this pilot)"]
         return None
 
     # ------------------------------------------------------------- verify
@@ -823,7 +903,7 @@ class Engine:
         caps = []
         # Only answers that depend on the CURRENT plant condition are capped for
         # missing live data. A set point or a refusal does not change with it.
-        if intent in ("TRIP_RESTART", "SYMPTOM"):
+        if intent in ("TRIP_RESTART", "SYMPTOM", "JUDGEMENT"):
             if score > 75:
                 caps.append("Capped at 75: no live process data in this pilot (read-only historian not connected)")
                 score = 75
@@ -870,7 +950,8 @@ class Engine:
                    "PROCEDURE": lambda: self.a_procedure(q, tag, E, S),
                    "PARAMETER": lambda: self.a_parameter(q, tag, E, S),
                    "SYMPTOM": lambda: self.a_symptom(q, tag, E, S, notv),
-                   "DEVIATION": lambda: self.a_deviation(q, tag, E, S)}.get(intent)
+                   "DEVIATION": lambda: self.a_deviation(q, tag, E, S),
+                   "JUDGEMENT": lambda: self.a_judgement(q, tag, E, S, notv)}.get(intent)
         miss = handler() if handler else "general"
 
         retrieval_top = self.R.search(q, tag=tag, k=5)
@@ -891,8 +972,11 @@ class Engine:
                 return {**base, "status": "abstained", "asset": asset,
                         "headline": "No approved source answers this. CASCADE will not guess.",
                         "reason": f"no evidence above threshold for intent {intent}",
-                        "escalation": {"role": "Process / reliability engineer for the unit",
-                                       "why": "question outside indexed knowledge"},
+                        "escalation": ({"role": "Shift supervisor",
+                                        "why": f"safety-critical question without an approved source: "
+                                               f"{', '.join(safety)}"} if safety else
+                                       {"role": "Process / reliability engineer for the unit",
+                                        "why": "question outside indexed knowledge"}),
                         "sections": [], "evidence": [], "latency_ms": int((time.time() - t0) * 1000)}
             sec = Section("sources", "Closest sources (no recommendation made)")
             for h in relevant[:3]:
@@ -926,7 +1010,14 @@ class Engine:
         escalation = None
         if intent == "DEVIATION":
             escalation = {"role": "Shift supervisor + process engineer; MOC / authorised override permit",
-                          "why": "any defeat of an interlock requires an approved override permit"}
+                          "why": "any defeat of an interlock, change to a protective set point, or removal of "
+                                 "a protective device requires Management of Change or an approved override permit"}
+        elif intent == "JUDGEMENT":
+            escalation = {"role": "Shift supervisor decides; reliability engineer for trend assessment",
+                          "why": "a live-condition safety judgement is never made by CASCADE"}
+        elif status == "abstained" and safety:
+            escalation = {"role": "Shift supervisor", "why": f"safety-critical question without an approved "
+                                                            f"source: {', '.join(safety)}"}
         elif safety:
             escalation = {"role": "Shift supervisor (acknowledgement before acting)",
                           "why": f"safety-critical: {', '.join(safety)}"}
@@ -980,7 +1071,13 @@ class Engine:
         if intent == "PARAMETER":
             return f"Values below are quoted from the controlled documents for {tag}."
         if intent == "DEVIATION":
-            return "Refused: CASCADE never advises defeating or bypassing a safeguard. Escalation below."
+            if any(s.kind == "parameter" for s in S):
+                return ("Refused: changing a trip set point requires Management of Change. "
+                        "The approved value is shown unchanged; escalation below.")
+            return "Refused: CASCADE never advises defeating, bypassing or removing a safeguard. Escalation below."
+        if intent == "JUDGEMENT":
+            return ("CASCADE does not judge whether a live condition is safe. Approved limits and the "
+                    "response procedure are below; the shift supervisor decides.")
         return tag
 
 
