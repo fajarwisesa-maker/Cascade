@@ -26,7 +26,7 @@ FACT_PATTERNS = [
     ("opl", re.compile(r"\bOPL-[A-Z]{2}-\d{4}[A-Z]?-\d{2}\b")),
     ("date", re.compile(r"\b20\d{2}-\d{2}-\d{2}\b")),
     ("qty", re.compile(r"(?<![\w.])\d+(?:[.,]\d+)?\s?(?:mm/s|barg|bar|degC|°C|m3/h|kW|rpm|"
-                       r"mm/100mm|mm|MW|kg/h|h|days?|d)\b")),
+                       r"mm/100mm|mm|MW|kg/h|h|years?|months?|weeks?|days?|d)\b")),
     ("money", re.compile(r"Rp\s?[\d.,]+")),
 ]
 
@@ -69,8 +69,9 @@ def fact_supported(kind: str, fact: str, evidence_text: str) -> bool:
     f = _norm_fact(kind, fact)
     if kind == "qty":
         num = re.match(r"[\d.]+", f).group(0)
-        # the number itself must appear; units vary in spacing across docs
-        return re.search(rf"(?<![\d.]){re.escape(num)}(?![\d])", ev) is not None
+        # the number must appear as a standalone value, not as a digit glued to a
+        # letter (e.g. "5" must not be "supported" by the cause-row label "T5").
+        return re.search(rf"(?<![\w.]){re.escape(num)}(?![\d])", ev) is not None
     if kind == "money":
         digits = re.sub(r"\D", "", f)
         return digits in re.sub(r"\D", "", ev) or digits in ev.replace(".", "")

@@ -218,7 +218,7 @@
     ["wo", /\bWO-\d{6}\b/g],
     ["opl", /\bOPL-[A-Z]{2}-\d{4}[A-Z]?-\d{2}\b/g],
     ["date", /\b20\d{2}-\d{2}-\d{2}\b/g],
-    ["qty", /(?<![\w.])\d+(?:[.,]\d+)?\s?(?:mm\/s|barg|bar|degC|°C|m3\/h|kW|rpm|mm\/100mm|mm|MW|kg\/h|h|days?|d)\b/g],
+    ["qty", /(?<![\w.])\d+(?:[.,]\d+)?\s?(?:mm\/s|barg|bar|degC|°C|m3\/h|kW|rpm|mm\/100mm|mm|MW|kg\/h|h|years?|months?|weeks?|days?|d)\b/g],
     ["money", /Rp\s?[\d.,]+/g],
   ];
   function orderedSubsequence(needle, hay) {
@@ -242,7 +242,7 @@
     const f = normFact(fact);
     if (kind === "qty") {
       const num = f.match(/[\d.]+/)[0];
-      return new RegExp(`(?<![\\d.])${escRe(num)}(?![\\d])`).test(ev);
+      return new RegExp(`(?<![\\w.])${escRe(num)}(?![\\d])`).test(ev);
     }
     if (kind === "money") {
       const digits = f.replace(/\D/g, "");
