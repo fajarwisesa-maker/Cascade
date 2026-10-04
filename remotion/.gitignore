@@ -4,3 +4,6 @@ out/
 build/
 dist/
 *.log
+
+# rendered output is reproducible from source; preview is shared separately
+out/
