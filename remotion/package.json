@@ -1,0 +1,23 @@
+{
+  "name": "cascade-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion video environment for CASCADE",
+  "scripts": {
+    "start": "remotion studio",
+    "studio": "remotion studio",
+    "render": "remotion render",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "remotion": "4.0.532",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "typescript": "5.8.2"
+  }
+}
