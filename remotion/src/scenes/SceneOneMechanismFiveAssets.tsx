@@ -55,7 +55,7 @@ export const SceneOneMechanismFiveAssets: React.FC = () => (
 
       <Rise at={CUE.exposure} style={{ marginTop: 28 }}>
         <div style={{ fontFamily: FONT.body, fontSize: 24, color: COLOR.white }}>
-          Rp 114.69 jt inside those chains
+          Rp 114.69 jt inside the 6 detected chains
         </div>
         <div style={{
           fontFamily: FONT.mono, fontSize: 15, letterSpacing: "0.05em", color: COLOR.cyan,

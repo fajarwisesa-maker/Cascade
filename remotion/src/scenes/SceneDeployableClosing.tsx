@@ -21,9 +21,13 @@ const Badge: React.FC<{ at: number; children: React.ReactNode }> = ({ at, childr
   </Rise>
 );
 
-const LOGOS = [
-  "logos/cascade.webp", "logos/chandra-asri.png",
-  "logos/caliber.webp", "logos/president-university.webp",
+/* Trimmed to their content bounding box. The supplied files are 2000x2000 with
+   very large transparent margins - Chandra Asri's lockup is only 450 px tall in
+   that canvas - so sizing by the raw file makes the marks render tiny. */
+const PARTNERS = [
+  { src: "logos/chandra-asri-trim.png", w: 340 },          // ar 4.32 -> h 79
+  { src: "logos/caliber-trim.png", w: 250 },               // ar 1.85 -> h 135
+  { src: "logos/president-university-trim.png", h: 150 },  // ar 0.92 -> w 138
 ];
 
 export const SceneDeployableClosing: React.FC = () => {
@@ -92,12 +96,12 @@ export const SceneDeployableClosing: React.FC = () => {
         transform: `translateY(${(1 - closeIn) * 16}px)`,
       }}>
         <div style={{
-          width: 150, height: 150, borderRadius: 26, background: COLOR.white,
+          width: 226, height: 176, borderRadius: 26, background: COLOR.white,
           display: "flex", alignItems: "center", justifyContent: "center",
           boxShadow: "0 18px 46px rgba(0,0,0,0.42)",
         }}>
-          <Img src={staticFile("logos/cascade.webp")}
-               style={{ width: 118, height: 118, objectFit: "contain" }} />
+          <Img src={staticFile("logos/cascade-trim.png")}
+               style={{ width: 182, objectFit: "contain" }} />
         </div>
 
         <div style={{
@@ -111,12 +115,18 @@ export const SceneDeployableClosing: React.FC = () => {
         }}>CASCADE is what reads them together.</div>
 
         <div style={{
-          display: "flex", gap: 52, alignItems: "center", marginTop: 58,
-          background: COLOR.white, borderRadius: 14, padding: "20px 44px",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          gap: 64, marginTop: 48,   /* 4 gaps: 3 logos + 2 dividers */
+          background: COLOR.white, borderRadius: 18, padding: "40px 80px",
           boxShadow: "0 14px 38px rgba(0,0,0,0.34)",
         }}>
-          {LOGOS.slice(1).map((l) => (
-            <Img key={l} src={staticFile(l)} style={{ height: 64, objectFit: "contain" }} />
+          {PARTNERS.map((p, i) => (
+            <React.Fragment key={p.src}>
+              {i > 0 ? <div style={{ width: 1, height: 96, background: "#D8DEE8" }} /> : null}
+              <Img src={staticFile(p.src)}
+                   style={p.w ? { width: p.w, objectFit: "contain" }
+                              : { height: p.h, objectFit: "contain" }} />
+            </React.Fragment>
           ))}
         </div>
       </div>

@@ -8,11 +8,13 @@ import { COLOR, EASE, FONT } from "../styles/theme";
    297 only-36-percent | 416 knowledge-isnt-missing | 465 split-across-files */
 const CUE = { wo: 0, breakdowns: 149, pct: 297, notMissing: 416, split: 465 };
 
-const Stat: React.FC<{ at: number; value: React.ReactNode; label: string }> = ({ at, value, label }) => (
+const Stat: React.FC<{ at: number; value: React.ReactNode; label: string; size?: number }> = ({
+  at, value, label, size = 104,
+}) => (
   <Rise at={at} style={{ flex: 1 }}>
     <div style={{
-      fontFamily: FONT.display, fontWeight: 600, fontSize: 104, lineHeight: 1,
-      color: COLOR.white, fontVariantNumeric: "tabular-nums",
+      fontFamily: FONT.display, fontWeight: 600, fontSize: size, lineHeight: 1,
+      color: COLOR.white, fontVariantNumeric: "tabular-nums", whiteSpace: "nowrap",
     }}>{value}</div>
     <div style={{
       fontFamily: FONT.body, fontSize: 19, letterSpacing: "0.08em", textTransform: "uppercase",
@@ -40,8 +42,11 @@ export const SceneKnowledgeIsSplit: React.FC = () => {
           <Stat at={CUE.breakdowns} label="Breakdowns" value={<CountUp at={CUE.breakdowns} to={31} dur={26} />} />
           <Stat at={CUE.breakdowns + 20} label="Hours of downtime"
                 value={<CountUp at={CUE.breakdowns + 20} to={434} dur={30} />} />
-          <Stat at={CUE.breakdowns + 40} label="Maintenance cost"
-                value={<CountUp at={CUE.breakdowns + 40} to={537.77} decimals={2} dur={32} prefix="Rp " />} />
+          <Stat at={CUE.breakdowns + 40} label="Maintenance cost" size={88}
+                value={<>
+                  <CountUp at={CUE.breakdowns + 40} to={537.77} decimals={2} dur={32} prefix="Rp " />
+                  <span style={{ fontSize: 40, color: COLOR.muted }}> jt</span>
+                </>} />
         </div>
 
         {/* only 36% of the work orders carry a reusable root cause */}
