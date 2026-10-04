@@ -1,0 +1,42 @@
+{
+ "PUMP": {
+  "source": "PUMP.png",
+  "sha256": "640f9cdc32d1a0a2f1eba5f29a4f0eda3204a5dc120d088dd55d6f4e3f4e3bfa",
+  "recipe": "cover-4:3 640x480 lanczos srgb webp-q82"
+ },
+ "DRYER": {
+  "source": "DRYER.png",
+  "sha256": "bd44f5ec41bc8ae768e50e9123a0606fd467dae07641ae8f78d349c3f41a5329",
+  "recipe": "cover-4:3 640x480 lanczos srgb webp-q82"
+ },
+ "REACTOR": {
+  "source": "REACTOR.png",
+  "sha256": "eb54d5ea644942807370ed5421735c36c1fb7827d124fe8f668cfaf647a308d6",
+  "recipe": "cover-4:3 640x480 lanczos srgb webp-q82"
+ },
+ "COMPRESSOR": {
+  "source": "COMPRESSOR.png",
+  "sha256": "7a1ea3d0d3b1b0bc4f73cfa63a5838e6c0d2e2bfe6f296cc1ea4620f78b43874",
+  "recipe": "cover-4:3 640x480 lanczos srgb webp-q82"
+ },
+ "HEATER": {
+  "source": "HEATER.png",
+  "sha256": "a876401dccbd94b79ee348561328eed883588bc27265869f9f223d6ee35a8805",
+  "recipe": "cover-4:3 640x480 lanczos srgb webp-q82"
+ },
+ "VALVE": {
+  "source": "VALVE.png",
+  "sha256": "87cb3a92c11b0327aabfd1e989d373e8e12f1e3f6987db9dc528c6284d97c31a",
+  "recipe": "cover-4:3 640x480 lanczos srgb webp-q82"
+ },
+ "FAN": {
+  "source": "FAN.png",
+  "sha256": "6ee99dd19b33edd432f3a61c79dc15cca21357ea0032d026732ec1cf977dc136",
+  "recipe": "cover-4:3 640x480 lanczos srgb webp-q82"
+ },
+ "DRUM": {
+  "source": "DRUM.png",
+  "sha256": "3f1395d45f41cb77b60d545def8ce442c04525d5935a1378c566c0e4e7b1bace",
+  "recipe": "cover-4:3 640x480 lanczos srgb webp-q82"
+ }
+}

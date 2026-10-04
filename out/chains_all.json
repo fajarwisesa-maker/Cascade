@@ -1,0 +1,506 @@
+[
+ {
+  "chain_id": "CH-GA-1201A-01",
+  "tag": "GA-1201A",
+  "equipment": "HEXANE FEED PUMP",
+  "root_mechanism": "MISALIGNMENT",
+  "wos": [
+   "WO-240003",
+   "WO-240013",
+   "WO-240004",
+   "WO-240007"
+  ],
+  "first_seen": "2025-02-23",
+  "last_seen": "2025-08-25",
+  "span_days": 182,
+  "n_events": 4,
+  "total_downtime_h": 6.5,
+  "total_cost_idr": 12630000.0,
+  "confidence": 0.711,
+  "loss_of_containment": false,
+  "events": [
+   {
+    "wo": "WO-240003",
+    "date": "2025-02-23 15:14:00",
+    "work_type": "Corrective",
+    "primary_mode": "STRUCTURAL_SUPPORT",
+    "causal_mode": "MISALIGNMENT",
+    "problem": "GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s",
+    "root_cause": "Angular misalignment 0.12 mm/100mm after foundation settlement",
+    "action": "Laser re-aligned pump/motor, re-shimmed motor feet, vibration back to 1.9 mm/s",
+    "downtime_h": null,
+    "cost_idr": null,
+    "related_interlock": "nan",
+    "components": [
+     "baseplate_grout",
+     "motor"
+    ]
+   },
+   {
+    "wo": "WO-240013",
+    "date": "2025-03-19 10:21:00",
+    "work_type": "Corrective",
+    "primary_mode": "STRUCTURAL_SUPPORT",
+    "causal_mode": "VIBRATION",
+    "problem": "Hairline crack in epoxy grout under baseplate edge",
+    "root_cause": "Vibration-induced grout fatigue at pump end",
+    "action": "Chipped out loose grout and re-grouted with epoxy, torqued hold-down bolts",
+    "downtime_h": null,
+    "cost_idr": null,
+    "related_interlock": "nan",
+    "components": [
+     "baseplate_grout"
+    ]
+   },
+   {
+    "wo": "WO-240004",
+    "date": "2025-03-29 08:56:00",
+    "work_type": "Corrective",
+    "primary_mode": "BEARING_FAILURE",
+    "causal_mode": "MISALIGNMENT",
+    "problem": "Bearing DE noisy with rising temperature TI-1201 trend",
+    "root_cause": "Outer race spalling on DE bearing due to prolonged misalignment",
+    "action": "Renewed DE bearing 7310 BECBM, flushed housing, refilled ISO VG 68",
+    "downtime_h": null,
+    "cost_idr": null,
+    "related_interlock": "nan",
+    "components": [
+     "bearing_DE"
+    ]
+   },
+   {
+    "wo": "WO-240007",
+    "date": "2025-08-25 11:58:00",
+    "work_type": "Corrective",
+    "primary_mode": "COUPLING_FAILURE",
+    "causal_mode": "MISALIGNMENT",
+    "problem": "Abnormal noise from coupling area, guard vibration",
+    "root_cause": "Rexnord coupling element cracked from repeated misalignment cycles",
+    "action": "Replaced coupling spacer element, re-aligned, re-fit guard",
+    "downtime_h": 6.5,
+    "cost_idr": 12630000.0,
+    "related_interlock": "SEQ-1201",
+    "components": [
+     "coupling"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240003",
+    "to": "WO-240013",
+    "score": 0.751,
+    "factors": {
+     "mechanism": 0.9,
+     "component": 1.0,
+     "lexical": 0.044,
+     "recurrence_cue": 1.0,
+     "temporal": 0.882,
+     "gap_days": 23
+    },
+    "rationale": "structural support is a known consequence of misalignment; shared term(s): vibration"
+   },
+   {
+    "frm": "WO-240003",
+    "to": "WO-240004",
+    "score": 0.72,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 0.6,
+     "lexical": 0.024,
+     "recurrence_cue": 1.0,
+     "temporal": 0.835,
+     "gap_days": 33
+    },
+    "rationale": "both root causes name misalignment"
+   },
+   {
+    "frm": "WO-240004",
+    "to": "WO-240007",
+    "score": 0.661,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 0.6,
+     "lexical": 0.024,
+     "recurrence_cue": 1.0,
+     "temporal": 0.442,
+     "gap_days": 149
+    },
+    "rationale": "both root causes name misalignment"
+   }
+  ]
+ },
+ {
+  "chain_id": "CH-EA-5601-05",
+  "tag": "EA-5601",
+  "equipment": "SOLVENT HEATER",
+  "root_mechanism": "FOULING",
+  "wos": [
+   "WO-240115",
+   "WO-240110",
+   "WO-240113"
+  ],
+  "first_seen": "2024-09-29",
+  "last_seen": "2025-03-05",
+  "span_days": 156,
+  "n_events": 3,
+  "total_downtime_h": 46.0,
+  "total_cost_idr": 48812000.0,
+  "confidence": 0.629,
+  "loss_of_containment": false,
+  "events": [
+   {
+    "wo": "WO-240115",
+    "date": "2024-09-29 08:10:00",
+    "work_type": "Corrective",
+    "primary_mode": "INSTRUMENT_DRIFT",
+    "causal_mode": "FOULING",
+    "problem": "Erratic tube dP reading",
+    "root_cause": "Impulse lines plugged with fines",
+    "action": "Cleaned and re-zeroed PDT-5605 transmitter",
+    "downtime_h": 0.0,
+    "cost_idr": 651000.0,
+    "related_interlock": "-",
+    "components": [
+     "tube_bundle",
+     "instrument"
+    ]
+   },
+   {
+    "wo": "WO-240110",
+    "date": "2024-12-13 09:06:00",
+    "work_type": "Corrective",
+    "primary_mode": "GASKET_LEAK",
+    "causal_mode": "FOULING",
+    "problem": "High tube dP PDT-5605, low solvent outlet temperature",
+    "root_cause": "Hexane fouling / polymer fines deposit on tube bores",
+    "action": "Hydrojetted 246 tubes, restored dP and duty, re-gasketed",
+    "downtime_h": 16.0,
+    "cost_idr": 7367000.0,
+    "related_interlock": "-",
+    "components": [
+     "tube_bundle"
+    ]
+   },
+   {
+    "wo": "WO-240113",
+    "date": "2025-03-05 06:49:00",
+    "work_type": "Overhaul",
+    "primary_mode": "TUBE_LEAK",
+    "causal_mode": "",
+    "problem": "Water found in solvent, rising outlet temperature",
+    "root_cause": "Two tubes leaking at tube-to-tubesheet joint",
+    "action": "Located and plugged 2 tubes both ends, hydrotest passed",
+    "downtime_h": 30.0,
+    "cost_idr": 40794000.0,
+    "related_interlock": "-",
+    "components": [
+     "tube_bundle"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240115",
+    "to": "WO-240110",
+    "score": 0.684,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 1.0,
+     "lexical": 0.173,
+     "recurrence_cue": 0.0,
+     "temporal": 0.663,
+     "gap_days": 75
+    },
+    "rationale": "both root causes name fouling"
+   },
+   {
+    "frm": "WO-240115",
+    "to": "WO-240113",
+    "score": 0.574,
+    "factors": {
+     "mechanism": 0.9,
+     "component": 1.0,
+     "lexical": 0.0,
+     "recurrence_cue": 0.0,
+     "temporal": 0.425,
+     "gap_days": 156
+    },
+    "rationale": "tube leak is a known consequence of fouling; shared term(s): plugged"
+   }
+  ]
+ },
+ {
+  "chain_id": "CH-FA-8901-06",
+  "tag": "FA-8901",
+  "equipment": "REFLUX ACCUMULATOR DRUM",
+  "root_mechanism": "FOULING",
+  "wos": [
+   "WO-240196",
+   "WO-240188"
+  ],
+  "first_seen": "2024-09-02",
+  "last_seen": "2024-09-11",
+  "span_days": 8,
+  "n_events": 2,
+  "total_downtime_h": 0,
+  "total_cost_idr": 609000.0,
+  "confidence": 0.554,
+  "loss_of_containment": false,
+  "events": [
+   {
+    "wo": "WO-240196",
+    "date": "2024-09-02 12:25:00",
+    "work_type": "Corrective",
+    "primary_mode": "INSTRUMENT_DRIFT",
+    "causal_mode": "FOULING",
+    "problem": "Drum pressure reading erratic",
+    "root_cause": "Impulse line plugged",
+    "action": "Cleared impulse line, re-zeroed PT-8902",
+    "downtime_h": 0.0,
+    "cost_idr": 252000.0,
+    "related_interlock": "SEQ-8901",
+    "components": [
+     "instrument"
+    ]
+   },
+   {
+    "wo": "WO-240188",
+    "date": "2024-09-11 09:51:00",
+    "work_type": "Calibration",
+    "primary_mode": "INSTRUMENT_DRIFT",
+    "causal_mode": "",
+    "problem": "Reflux drum level transmitter drifting vs gauge",
+    "root_cause": "Transmitter zero drift",
+    "action": "Recalibrated LT-8901 against the bridle gauge",
+    "downtime_h": 0.0,
+    "cost_idr": 357000.0,
+    "related_interlock": "SEQ-8901",
+    "components": [
+     "instrument"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240196",
+    "to": "WO-240188",
+    "score": 0.554,
+    "factors": {
+     "mechanism": 0.65,
+     "component": 1.0,
+     "lexical": 0.0,
+     "recurrence_cue": 0.0,
+     "temporal": 0.957,
+     "gap_days": 8
+    },
+    "rationale": "instrument drift is a known consequence of fouling"
+   }
+  ]
+ },
+ {
+  "chain_id": "CH-KC-4501-04",
+  "tag": "KC-4501",
+  "equipment": "RECYCLE GAS COMPRESSOR",
+  "root_mechanism": "FOULING",
+  "wos": [
+   "WO-240089",
+   "WO-240091"
+  ],
+  "first_seen": "2025-02-05",
+  "last_seen": "2025-02-18",
+  "span_days": 12,
+  "n_events": 2,
+  "total_downtime_h": 38.0,
+  "total_cost_idr": 37673000.0,
+  "confidence": 0.54,
+  "loss_of_containment": false,
+  "events": [
+   {
+    "wo": "WO-240089",
+    "date": "2025-02-05 18:09:00",
+    "work_type": "Corrective",
+    "primary_mode": "FOULING",
+    "causal_mode": "FOULING",
+    "problem": "High interstage temperature, fouling suspected",
+    "root_cause": "Waterside fouling of intercooler tubes",
+    "action": "Hydrojetted intercooler tubes, restored approach temp",
+    "downtime_h": 16.0,
+    "cost_idr": 20176000.0,
+    "related_interlock": "SEQ-4501",
+    "components": [
+     "tube_bundle"
+    ]
+   },
+   {
+    "wo": "WO-240091",
+    "date": "2025-02-18 17:30:00",
+    "work_type": "Corrective",
+    "primary_mode": "BEARING_FAILURE",
+    "causal_mode": "FOULING",
+    "problem": "TE-4507 main bearing temperature rising",
+    "root_cause": "Restricted oil supply groove to No.2 main bearing",
+    "action": "Inspected and cleared oil passage, checked bearing clearance",
+    "downtime_h": 22.0,
+    "cost_idr": 17497000.0,
+    "related_interlock": "SEQ-4501",
+    "components": [
+     "lube_system"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240089",
+    "to": "WO-240091",
+    "score": 0.54,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 0.0,
+     "lexical": 0.0,
+     "recurrence_cue": 0.0,
+     "temporal": 0.936,
+     "gap_days": 12
+    },
+    "rationale": "both root causes name fouling"
+   }
+  ]
+ },
+ {
+  "chain_id": "CH-YD-2301-03",
+  "tag": "YD-2301",
+  "equipment": "POLYMER FLUID BED DRYER",
+  "root_mechanism": "FOULING",
+  "wos": [
+   "WO-240035",
+   "WO-240039"
+  ],
+  "first_seen": "2024-06-14",
+  "last_seen": "2024-08-05",
+  "span_days": 52,
+  "n_events": 2,
+  "total_downtime_h": 6.0,
+  "total_cost_idr": 14381000.0,
+  "confidence": 0.532,
+  "loss_of_containment": false,
+  "events": [
+   {
+    "wo": "WO-240035",
+    "date": "2024-06-14 08:53:00",
+    "work_type": "Calibration",
+    "primary_mode": "INSTRUMENT_DRIFT",
+    "causal_mode": "FOULING",
+    "problem": "Outlet moisture reading drifting vs lab sample",
+    "root_cause": "Analyzer sample line partly blocked and cell drift",
+    "action": "Cleaned sample line and recalibrated MT-2306 to lab reference",
+    "downtime_h": 0.0,
+    "cost_idr": 252000.0,
+    "related_interlock": "SEQ-5500",
+    "components": [
+     "instrument"
+    ]
+   },
+   {
+    "wo": "WO-240039",
+    "date": "2024-08-05 11:31:00",
+    "work_type": "Corrective",
+    "primary_mode": "INSTRUMENT_DRIFT",
+    "causal_mode": "",
+    "problem": "O2 analyzer reading unstable, inerting confidence low",
+    "root_cause": "O2 sensor cell end of life",
+    "action": "Replaced O2 sensor cell, calibrated on span gas, verified ASHH-2307",
+    "downtime_h": 6.0,
+    "cost_idr": 14129000.0,
+    "related_interlock": "SEQ-5500",
+    "components": [
+     "instrument"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240035",
+    "to": "WO-240039",
+    "score": 0.532,
+    "factors": {
+     "mechanism": 0.65,
+     "component": 1.0,
+     "lexical": 0.048,
+     "recurrence_cue": 0.0,
+     "temporal": 0.752,
+     "gap_days": 52
+    },
+    "rationale": "instrument drift is a known consequence of fouling"
+   }
+  ]
+ },
+ {
+  "chain_id": "CH-GA-1201A-02",
+  "tag": "GA-1201A",
+  "equipment": "HEXANE FEED PUMP",
+  "root_mechanism": "FOULING",
+  "wos": [
+   "WO-240008",
+   "WO-240002"
+  ],
+  "first_seen": "2024-11-05",
+  "last_seen": "2025-08-29",
+  "span_days": 296,
+  "n_events": 2,
+  "total_downtime_h": 0,
+  "total_cost_idr": 588000.0,
+  "confidence": 0.527,
+  "loss_of_containment": true,
+  "events": [
+   {
+    "wo": "WO-240008",
+    "date": "2024-11-05 07:58:00",
+    "work_type": "Corrective",
+    "primary_mode": "INSTRUMENT_DRIFT",
+    "causal_mode": "FOULING",
+    "problem": "PDI-1201 reading erratic, seal-flush low alarm nuisance-tripping",
+    "root_cause": "Impulse lines fouled with hexane residue/polymer fines",
+    "action": "Cleaned impulse lines and re-zeroed PDI-1201 transmitter",
+    "downtime_h": 0.0,
+    "cost_idr": 588000.0,
+    "related_interlock": "SEQ-1201",
+    "components": [
+     "instrument"
+    ]
+   },
+   {
+    "wo": "WO-240002",
+    "date": "2025-08-29 06:36:00",
+    "work_type": "Corrective",
+    "primary_mode": "SEAL_LEAK",
+    "causal_mode": "FOULING",
+    "problem": "Hexane leak observed at GA-1201A seal gland during operation, seal drain flowing",
+    "root_cause": "API Plan 11 flush orifice RO-1201 partially plugged causing seal face to run dry and score",
+    "action": "Replaced JC T2100 mechanical seal cartridge, cleaned flush orifice, verified PDI-1201 dP",
+    "downtime_h": null,
+    "cost_idr": null,
+    "related_interlock": "nan",
+    "components": [
+     "mechanical_seal",
+     "seal_flush"
+    ]
+   }
+  ],
+  "links": [
+   {
+    "frm": "WO-240008",
+    "to": "WO-240002",
+    "score": 0.527,
+    "factors": {
+     "mechanism": 1.0,
+     "component": 0.6,
+     "lexical": 0.035,
+     "recurrence_cue": 0.0,
+     "temporal": 0.198,
+     "gap_days": 296
+    },
+    "rationale": "both root causes name fouling"
+   }
+  ]
+ }
+]

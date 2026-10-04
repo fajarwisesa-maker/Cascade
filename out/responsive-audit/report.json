@@ -1,0 +1,5118 @@
+{
+  "status": "passed",
+  "browser": {
+    "path": "/opt/pw-browsers/chromium",
+    "product": "Chrome/141.0.7390.37"
+  },
+  "widths": [
+    1440,
+    1280,
+    1024,
+    768,
+    430,
+    390,
+    375
+  ],
+  "screens": [
+    "ask",
+    "answer",
+    "chains",
+    "asset",
+    "plant",
+    "chain",
+    "chat",
+    "assets",
+    "docs",
+    "tests"
+  ],
+  "failures": [],
+  "results": [
+    {
+      "screen": "ask",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "hero": {
+        "w": 1169,
+        "h": 263
+      },
+      "keyTile": true
+    },
+    {
+      "screen": "answer",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "contrast": [],
+      "evidenceTarget": {
+        "w": 59,
+        "h": 22
+      },
+      "tabTarget": {
+        "w": 38,
+        "h": 31
+      },
+      "trustDisclosure": true,
+      "relatedAfterAnswer": true,
+      "evidenceSheet": false,
+      "photos": [
+        {
+          "src": "thumb",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 102,
+          "frameW": 104,
+          "frameH": 78,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "chains",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-chains",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 6,
+        "cardOverflow": false,
+        "sortable": 9
+      },
+      "contrast": [],
+      "chartDisplay": "block",
+      "tableOpen": false,
+      "chainCards": 0,
+      "chainRows": 3,
+      "chainTableDisplay": "block",
+      "chainCardsLinked": true,
+      "chainCardOverflow": false
+    },
+    {
+      "screen": "asset",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-assets",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 9,
+        "columns": 5,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "metricColumns": 5,
+      "criticalMetric": true,
+      "metricTotal": 6,
+      "metricStrip": 6,
+      "moreMetricsVisible": false,
+      "moreMetricCount": 0,
+      "pidOpenTarget": {
+        "w": 218,
+        "h": 38
+      },
+      "pidControls": true,
+      "pidFit": false,
+      "pid": {
+        "opened": true,
+        "controls": true,
+        "initialFit": false,
+        "fitWithin": true,
+        "fitClass": true,
+        "zoomInGrows": true,
+        "zoomOutShrinks": true,
+        "keyZoomIn": true,
+        "keyZoomOut": true,
+        "actualSize": true,
+        "keyReset": true,
+        "level": "100%",
+        "targetOffenders": [],
+        "modalInViewport": true,
+        "noDocumentOverflow": true,
+        "closed": true
+      },
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "plant",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-plant",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 6,
+        "columns": 3,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chartDisplay": "block",
+      "tableOpen": false,
+      "chainCta": true,
+      "tagTargets": [
+        {
+          "w": 69,
+          "h": 27
+        },
+        {
+          "w": 69,
+          "h": 27
+        },
+        {
+          "w": 76,
+          "h": 27
+        },
+        {
+          "w": 69,
+          "h": 27
+        },
+        {
+          "w": 69,
+          "h": 27
+        },
+        {
+          "w": 76,
+          "h": 27
+        }
+      ]
+    },
+    {
+      "screen": "chain",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-chains",
+        "shellPad": 96
+      },
+      "contrast": [],
+      "crumbs": 4
+    },
+    {
+      "screen": "chat",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chat": {
+        "open": true,
+        "left": 985,
+        "width": 440,
+        "top": 0,
+        "bottom": 960,
+        "composeBottom": 960,
+        "inputBottom": 950,
+        "inputH": 45,
+        "threadScrolls": true,
+        "threadOverflowX": false,
+        "cardWithin": true,
+        "status": "answered",
+        "evidenceChips": 7,
+        "openFull": true,
+        "lookupCards": 2,
+        "lookupWithin": true,
+        "compareMode": "wide",
+        "assetLink": true,
+        "targets": []
+      }
+    },
+    {
+      "screen": "assets",
+      "width": 1440,
+      "documentClientWidth": 1440,
+      "documentScrollWidth": 1440,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-assets",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 8,
+        "cardOverflow": false,
+        "sortable": 11
+      },
+      "contrast": []
+    },
+    {
+      "screen": "docs",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tabMore",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 20,
+        "cardOverflow": false,
+        "sortable": 6
+      },
+      "contrast": [],
+      "docPidRows": 2,
+      "docPidCards": 2,
+      "docRows": 20,
+      "docViewer": true
+    },
+    {
+      "screen": "tests",
+      "width": 1440,
+      "documentClientWidth": 1425,
+      "documentScrollWidth": 1425,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tabMore",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "liveRows": 7,
+      "liveCardsStacked": null
+    },
+    {
+      "screen": "ask",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "hero": {
+        "w": 1009,
+        "h": 263
+      },
+      "keyTile": true
+    },
+    {
+      "screen": "answer",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "contrast": [],
+      "evidenceTarget": {
+        "w": 59,
+        "h": 22
+      },
+      "tabTarget": {
+        "w": 38,
+        "h": 31
+      },
+      "trustDisclosure": true,
+      "relatedAfterAnswer": true,
+      "evidenceSheet": false,
+      "photos": [
+        {
+          "src": "thumb",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 102,
+          "frameW": 104,
+          "frameH": 78,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "chains",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-chains",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 6,
+        "cardOverflow": false,
+        "sortable": 9
+      },
+      "contrast": [],
+      "chartDisplay": "block",
+      "tableOpen": false,
+      "chainCards": 0,
+      "chainRows": 3,
+      "chainTableDisplay": "block",
+      "chainCardsLinked": true,
+      "chainCardOverflow": false
+    },
+    {
+      "screen": "asset",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-assets",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 9,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "metricColumns": 4,
+      "criticalMetric": true,
+      "metricTotal": 6,
+      "metricStrip": 6,
+      "moreMetricsVisible": false,
+      "moreMetricCount": 0,
+      "pidOpenTarget": {
+        "w": 218,
+        "h": 38
+      },
+      "pidControls": true,
+      "pidFit": false,
+      "pid": {
+        "opened": true,
+        "controls": true,
+        "initialFit": false,
+        "fitWithin": true,
+        "fitClass": true,
+        "zoomInGrows": true,
+        "zoomOutShrinks": true,
+        "keyZoomIn": true,
+        "keyZoomOut": true,
+        "actualSize": true,
+        "keyReset": true,
+        "level": "100%",
+        "targetOffenders": [],
+        "modalInViewport": true,
+        "noDocumentOverflow": true,
+        "closed": true
+      },
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "plant",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-plant",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 6,
+        "columns": 3,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chartDisplay": "block",
+      "tableOpen": false,
+      "chainCta": true,
+      "tagTargets": [
+        {
+          "w": 69,
+          "h": 27
+        },
+        {
+          "w": 69,
+          "h": 27
+        },
+        {
+          "w": 76,
+          "h": 27
+        },
+        {
+          "w": 69,
+          "h": 27
+        },
+        {
+          "w": 69,
+          "h": 27
+        },
+        {
+          "w": 76,
+          "h": 27
+        }
+      ]
+    },
+    {
+      "screen": "chain",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-chains",
+        "shellPad": 96
+      },
+      "contrast": [],
+      "crumbs": 4
+    },
+    {
+      "screen": "chat",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chat": {
+        "open": true,
+        "left": 825,
+        "width": 440,
+        "top": 0,
+        "bottom": 960,
+        "composeBottom": 960,
+        "inputBottom": 950,
+        "inputH": 45,
+        "threadScrolls": true,
+        "threadOverflowX": false,
+        "cardWithin": true,
+        "status": "answered",
+        "evidenceChips": 7,
+        "openFull": true,
+        "lookupCards": 2,
+        "lookupWithin": true,
+        "compareMode": "wide",
+        "assetLink": true,
+        "targets": []
+      }
+    },
+    {
+      "screen": "assets",
+      "width": 1280,
+      "documentClientWidth": 1280,
+      "documentScrollWidth": 1280,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-assets",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 8,
+        "cardOverflow": false,
+        "sortable": 11
+      },
+      "contrast": []
+    },
+    {
+      "screen": "docs",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tabMore",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 20,
+        "cardOverflow": false,
+        "sortable": 6
+      },
+      "contrast": [],
+      "docPidRows": 2,
+      "docPidCards": 2,
+      "docRows": 20,
+      "docViewer": true
+    },
+    {
+      "screen": "tests",
+      "width": 1280,
+      "documentClientWidth": 1265,
+      "documentScrollWidth": 1265,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 208,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tabMore",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "liveRows": 7,
+      "liveCardsStacked": null
+    },
+    {
+      "screen": "ask",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "hero": {
+        "w": 897,
+        "h": 278
+      },
+      "keyTile": true
+    },
+    {
+      "screen": "answer",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "contrast": [],
+      "evidenceTarget": {
+        "w": 59,
+        "h": 44
+      },
+      "tabTarget": {
+        "w": 44,
+        "h": 44
+      },
+      "trustDisclosure": true,
+      "relatedAfterAnswer": true,
+      "evidenceSheet": true,
+      "photos": [
+        {
+          "src": "thumb",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 102,
+          "frameW": 104,
+          "frameH": 78,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "chains",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-chains",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 6,
+        "cardOverflow": false,
+        "sortable": 9
+      },
+      "contrast": [],
+      "chartDisplay": "block",
+      "tableOpen": false,
+      "chainCards": 0,
+      "chainRows": 3,
+      "chainTableDisplay": "block",
+      "chainCardsLinked": true,
+      "chainCardOverflow": false
+    },
+    {
+      "screen": "asset",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-assets",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 9,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "metricColumns": 4,
+      "criticalMetric": true,
+      "metricTotal": 6,
+      "metricStrip": 6,
+      "moreMetricsVisible": false,
+      "moreMetricCount": 0,
+      "pidOpenTarget": {
+        "w": 218,
+        "h": 44
+      },
+      "pidControls": true,
+      "pidFit": false,
+      "pid": {
+        "opened": true,
+        "controls": true,
+        "initialFit": false,
+        "fitWithin": true,
+        "fitClass": true,
+        "zoomInGrows": true,
+        "zoomOutShrinks": true,
+        "keyZoomIn": true,
+        "keyZoomOut": true,
+        "actualSize": true,
+        "keyReset": true,
+        "level": "100%",
+        "targetOffenders": [],
+        "modalInViewport": true,
+        "noDocumentOverflow": true,
+        "closed": true
+      },
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "plant",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-plant",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 6,
+        "columns": 3,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chartDisplay": "block",
+      "tableOpen": false,
+      "chainCta": true,
+      "tagTargets": [
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "screen": "chain",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-chains",
+        "shellPad": 96
+      },
+      "contrast": [],
+      "crumbs": 4
+    },
+    {
+      "screen": "chat",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chat": {
+        "open": true,
+        "left": 569,
+        "width": 440,
+        "top": 0,
+        "bottom": 960,
+        "composeBottom": 960,
+        "inputBottom": 950,
+        "inputH": 45,
+        "threadScrolls": true,
+        "threadOverflowX": false,
+        "cardWithin": true,
+        "status": "answered",
+        "evidenceChips": 7,
+        "openFull": true,
+        "lookupCards": 2,
+        "lookupWithin": true,
+        "compareMode": "wide",
+        "assetLink": true,
+        "targets": []
+      }
+    },
+    {
+      "screen": "assets",
+      "width": 1024,
+      "documentClientWidth": 1024,
+      "documentScrollWidth": 1024,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-assets",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 8,
+        "cardOverflow": false,
+        "sortable": 11
+      },
+      "contrast": []
+    },
+    {
+      "screen": "docs",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tabMore",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 20,
+        "cardOverflow": false,
+        "sortable": 6
+      },
+      "contrast": [],
+      "docPidRows": 2,
+      "docPidCards": 2,
+      "docRows": 20,
+      "docViewer": true
+    },
+    {
+      "screen": "tests",
+      "width": 1024,
+      "documentClientWidth": 1009,
+      "documentScrollWidth": 1009,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 960
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tabMore",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "liveRows": 7,
+      "liveCardsStacked": null
+    },
+    {
+      "screen": "ask",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "hero": {
+        "w": 641,
+        "h": 330
+      },
+      "keyTile": true
+    },
+    {
+      "screen": "answer",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "contrast": [],
+      "evidenceTarget": {
+        "w": 59,
+        "h": 44
+      },
+      "tabTarget": {
+        "w": 44,
+        "h": 44
+      },
+      "trustDisclosure": true,
+      "relatedAfterAnswer": true,
+      "evidenceSheet": true,
+      "photos": [
+        {
+          "src": "thumb",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 102,
+          "frameW": 104,
+          "frameH": 78,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "chains",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-chains",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 6,
+        "cardOverflow": false,
+        "sortable": 9
+      },
+      "contrast": [],
+      "chartDisplay": "block",
+      "tableOpen": false,
+      "chainCards": 0,
+      "chainRows": 3,
+      "chainTableDisplay": "block",
+      "chainCardsLinked": true,
+      "chainCardOverflow": false
+    },
+    {
+      "screen": "asset",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-assets",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 9,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "metricColumns": 4,
+      "criticalMetric": true,
+      "metricTotal": 6,
+      "metricStrip": 6,
+      "moreMetricsVisible": false,
+      "moreMetricCount": 0,
+      "pidOpenTarget": {
+        "w": 218,
+        "h": 44
+      },
+      "pidControls": true,
+      "pidFit": false,
+      "pid": {
+        "opened": true,
+        "controls": true,
+        "initialFit": false,
+        "fitWithin": true,
+        "fitClass": true,
+        "zoomInGrows": true,
+        "zoomOutShrinks": true,
+        "keyZoomIn": true,
+        "keyZoomOut": true,
+        "actualSize": true,
+        "keyReset": true,
+        "level": "100%",
+        "targetOffenders": [],
+        "modalInViewport": true,
+        "noDocumentOverflow": true,
+        "closed": true
+      },
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "plant",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-plant",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 6,
+        "columns": 3,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chartDisplay": "block",
+      "tableOpen": false,
+      "chainCta": true,
+      "tagTargets": [
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        }
+      ]
+    },
+    {
+      "screen": "chain",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-chains",
+        "shellPad": 96
+      },
+      "contrast": [],
+      "crumbs": 4
+    },
+    {
+      "screen": "chat",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-ask",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chat": {
+        "open": true,
+        "left": 313,
+        "width": 440,
+        "top": 0,
+        "bottom": 900,
+        "composeBottom": 900,
+        "inputBottom": 890,
+        "inputH": 45,
+        "threadScrolls": true,
+        "threadOverflowX": false,
+        "cardWithin": true,
+        "status": "answered",
+        "evidenceChips": 7,
+        "openFull": true,
+        "lookupCards": 2,
+        "lookupWithin": true,
+        "compareMode": "wide",
+        "assetLink": true,
+        "targets": []
+      }
+    },
+    {
+      "screen": "assets",
+      "width": 768,
+      "documentClientWidth": 768,
+      "documentScrollWidth": 768,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tab-assets",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 8,
+        "cardOverflow": false,
+        "sortable": 11
+      },
+      "contrast": []
+    },
+    {
+      "screen": "docs",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tabMore",
+        "shellPad": 96
+      },
+      "dt": {
+        "tableShown": true,
+        "cardsShown": 0,
+        "rows": 20,
+        "cardOverflow": false,
+        "sortable": 6
+      },
+      "contrast": [],
+      "docPidRows": 2,
+      "docPidCards": 2,
+      "docRows": 20,
+      "docViewer": true
+    },
+    {
+      "screen": "tests",
+      "width": 768,
+      "documentClientWidth": 753,
+      "documentScrollWidth": 753,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 0,
+        "h": 0
+      },
+      "nav": {
+        "w": 64,
+        "h": 900
+      },
+      "mobileMenuVisible": false,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "none",
+        "items": 5,
+        "minH": 0,
+        "height": 0,
+        "current": "tabMore",
+        "shellPad": 96
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 4,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "liveRows": 7,
+      "liveCardsStacked": null
+    },
+    {
+      "screen": "ask",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "hero": {
+        "w": 398,
+        "h": 313
+      },
+      "keyTile": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "answer",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "contrast": [],
+      "evidenceTarget": {
+        "w": 59,
+        "h": 44
+      },
+      "tabTarget": {
+        "w": 44,
+        "h": 44
+      },
+      "trustDisclosure": true,
+      "relatedAfterAnswer": true,
+      "evidenceSheet": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44,
+      "photos": [
+        {
+          "src": "thumb",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 102,
+          "frameW": 104,
+          "frameH": 78,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "chains",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-chains",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 6,
+        "rows": 6,
+        "cardOverflow": false,
+        "sortable": 9
+      },
+      "contrast": [],
+      "chartDisplay": "none",
+      "tableOpen": true,
+      "chainCards": 3,
+      "chainRows": 3,
+      "chainTableDisplay": "none",
+      "chainCardsLinked": true,
+      "chainCardOverflow": false,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "asset",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-assets",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 5,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "metricColumns": 2,
+      "criticalMetric": true,
+      "metricTotal": 6,
+      "metricStrip": 2,
+      "moreMetricsVisible": true,
+      "moreMetricCount": 4,
+      "pidOpenTarget": {
+        "w": 218,
+        "h": 44
+      },
+      "pidControls": true,
+      "pidFit": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44,
+      "pid": {
+        "opened": true,
+        "controls": true,
+        "initialFit": true,
+        "fitWithin": true,
+        "fitClass": true,
+        "zoomInGrows": true,
+        "zoomOutShrinks": true,
+        "keyZoomIn": true,
+        "keyZoomOut": true,
+        "actualSize": true,
+        "keyReset": true,
+        "level": "Fit width · 33%",
+        "targetOffenders": [],
+        "modalInViewport": true,
+        "noDocumentOverflow": true,
+        "closed": true
+      },
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 130,
+          "frameW": 132,
+          "frameH": 99,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "plant",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-plant",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 6,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chartDisplay": "none",
+      "tableOpen": true,
+      "chainCta": true,
+      "tagTargets": [
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        }
+      ],
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "chain",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-chains",
+        "shellPad": 140
+      },
+      "contrast": [],
+      "crumbs": 4,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "chat",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chat": {
+        "open": true,
+        "left": 0,
+        "width": 430,
+        "top": 0,
+        "bottom": 844,
+        "composeBottom": 844,
+        "inputBottom": 834,
+        "inputH": 45,
+        "threadScrolls": true,
+        "threadOverflowX": false,
+        "cardWithin": true,
+        "status": "answered",
+        "evidenceChips": 7,
+        "openFull": true,
+        "lookupCards": 2,
+        "lookupWithin": true,
+        "compareMode": "stack",
+        "assetLink": true,
+        "targets": []
+      },
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "assets",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-assets",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 8,
+        "rows": 8,
+        "cardOverflow": false,
+        "sortable": 11
+      },
+      "contrast": [],
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "docs",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tabMore",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 20,
+        "rows": 20,
+        "cardOverflow": false,
+        "sortable": 6
+      },
+      "contrast": [],
+      "docPidRows": 2,
+      "docPidCards": 2,
+      "docRows": 20,
+      "docViewer": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "tests",
+      "width": 430,
+      "documentClientWidth": 430,
+      "documentScrollWidth": 430,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 430,
+        "h": 56
+      },
+      "nav": {
+        "w": 430,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tabMore",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "liveRows": 7,
+      "liveCardsStacked": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "ask",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "hero": {
+        "w": 358,
+        "h": 313
+      },
+      "keyTile": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "answer",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "contrast": [],
+      "evidenceTarget": {
+        "w": 59,
+        "h": 44
+      },
+      "tabTarget": {
+        "w": 44,
+        "h": 44
+      },
+      "trustDisclosure": true,
+      "relatedAfterAnswer": true,
+      "evidenceSheet": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44,
+      "photos": [
+        {
+          "src": "thumb",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 102,
+          "frameW": 104,
+          "frameH": 78,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "chains",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-chains",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 6,
+        "rows": 6,
+        "cardOverflow": false,
+        "sortable": 9
+      },
+      "contrast": [],
+      "chartDisplay": "none",
+      "tableOpen": true,
+      "chainCards": 3,
+      "chainRows": 3,
+      "chainTableDisplay": "none",
+      "chainCardsLinked": true,
+      "chainCardOverflow": false,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "asset",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-assets",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 5,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "metricColumns": 2,
+      "criticalMetric": true,
+      "metricTotal": 6,
+      "metricStrip": 2,
+      "moreMetricsVisible": true,
+      "moreMetricCount": 4,
+      "pidOpenTarget": {
+        "w": 218,
+        "h": 44
+      },
+      "pidControls": true,
+      "pidFit": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44,
+      "pid": {
+        "opened": true,
+        "controls": true,
+        "initialFit": true,
+        "fitWithin": true,
+        "fitClass": true,
+        "zoomInGrows": true,
+        "zoomOutShrinks": true,
+        "keyZoomIn": true,
+        "keyZoomOut": true,
+        "actualSize": true,
+        "keyReset": true,
+        "level": "Fit width · 29%",
+        "targetOffenders": [],
+        "modalInViewport": true,
+        "noDocumentOverflow": true,
+        "closed": true
+      },
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 130,
+          "frameW": 132,
+          "frameH": 99,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "plant",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-plant",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 6,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chartDisplay": "none",
+      "tableOpen": true,
+      "chainCta": true,
+      "tagTargets": [
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        }
+      ],
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "chain",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-chains",
+        "shellPad": 140
+      },
+      "contrast": [],
+      "crumbs": 4,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "chat",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chat": {
+        "open": true,
+        "left": 0,
+        "width": 390,
+        "top": 0,
+        "bottom": 844,
+        "composeBottom": 844,
+        "inputBottom": 834,
+        "inputH": 45,
+        "threadScrolls": true,
+        "threadOverflowX": false,
+        "cardWithin": true,
+        "status": "answered",
+        "evidenceChips": 7,
+        "openFull": true,
+        "lookupCards": 2,
+        "lookupWithin": true,
+        "compareMode": "stack",
+        "assetLink": true,
+        "targets": []
+      },
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "assets",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-assets",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 8,
+        "rows": 8,
+        "cardOverflow": false,
+        "sortable": 11
+      },
+      "contrast": [],
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "docs",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tabMore",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 20,
+        "rows": 20,
+        "cardOverflow": false,
+        "sortable": 6
+      },
+      "contrast": [],
+      "docPidRows": 2,
+      "docPidCards": 2,
+      "docRows": 20,
+      "docViewer": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "tests",
+      "width": 390,
+      "documentClientWidth": 390,
+      "documentScrollWidth": 390,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 390,
+        "h": 56
+      },
+      "nav": {
+        "w": 390,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tabMore",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "liveRows": 7,
+      "liveCardsStacked": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "ask",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "hero": {
+        "w": 343,
+        "h": 313
+      },
+      "keyTile": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "answer",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "contrast": [],
+      "evidenceTarget": {
+        "w": 59,
+        "h": 44
+      },
+      "tabTarget": {
+        "w": 44,
+        "h": 44
+      },
+      "trustDisclosure": true,
+      "relatedAfterAnswer": true,
+      "evidenceSheet": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44,
+      "photos": [
+        {
+          "src": "thumb",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 102,
+          "frameW": 104,
+          "frameH": 78,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "chains",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-chains",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 6,
+        "rows": 6,
+        "cardOverflow": false,
+        "sortable": 9
+      },
+      "contrast": [],
+      "chartDisplay": "none",
+      "tableOpen": true,
+      "chainCards": 3,
+      "chainRows": 3,
+      "chainTableDisplay": "none",
+      "chainCardsLinked": true,
+      "chainCardOverflow": false,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "asset",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-assets",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 5,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "metricColumns": 2,
+      "criticalMetric": true,
+      "metricTotal": 6,
+      "metricStrip": 2,
+      "moreMetricsVisible": true,
+      "moreMetricCount": 4,
+      "pidOpenTarget": {
+        "w": 218,
+        "h": 44
+      },
+      "pidControls": true,
+      "pidFit": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44,
+      "pid": {
+        "opened": true,
+        "controls": true,
+        "initialFit": true,
+        "fitWithin": true,
+        "fitClass": true,
+        "zoomInGrows": true,
+        "zoomOutShrinks": true,
+        "keyZoomIn": true,
+        "keyZoomOut": true,
+        "actualSize": true,
+        "keyReset": true,
+        "level": "Fit width · 28%",
+        "targetOffenders": [],
+        "modalInViewport": true,
+        "noDocumentOverflow": true,
+        "closed": true
+      },
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 130,
+          "frameW": 132,
+          "frameH": 99,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ]
+    },
+    {
+      "screen": "plant",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-plant",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 6,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chartDisplay": "none",
+      "tableOpen": true,
+      "chainCta": true,
+      "tagTargets": [
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 69,
+          "h": 44
+        },
+        {
+          "w": 76,
+          "h": 44
+        }
+      ],
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "chain",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-chains",
+        "shellPad": 140
+      },
+      "contrast": [],
+      "crumbs": 4,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "chat",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-ask",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "chat": {
+        "open": true,
+        "left": 0,
+        "width": 375,
+        "top": 0,
+        "bottom": 844,
+        "composeBottom": 844,
+        "inputBottom": 834,
+        "inputH": 45,
+        "threadScrolls": true,
+        "threadOverflowX": false,
+        "cardWithin": true,
+        "status": "answered",
+        "evidenceChips": 7,
+        "openFull": true,
+        "lookupCards": 2,
+        "lookupWithin": true,
+        "compareMode": "stack",
+        "assetLink": true,
+        "targets": []
+      },
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "assets",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tab-assets",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 8,
+        "rows": 8,
+        "cardOverflow": false,
+        "sortable": 11
+      },
+      "contrast": [],
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "docs",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tabMore",
+        "shellPad": 140
+      },
+      "dt": {
+        "tableShown": false,
+        "cardsShown": 20,
+        "rows": 20,
+        "cardOverflow": false,
+        "sortable": 6
+      },
+      "contrast": [],
+      "docPidRows": 2,
+      "docPidCards": 2,
+      "docRows": 20,
+      "docViewer": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    },
+    {
+      "screen": "tests",
+      "width": 375,
+      "documentClientWidth": 375,
+      "documentScrollWidth": 375,
+      "noDocumentOverflow": true,
+      "topbar": {
+        "w": 375,
+        "h": 56
+      },
+      "nav": {
+        "w": 375,
+        "h": 56
+      },
+      "mobileMenuVisible": true,
+      "targetOffenders": [],
+      "tabbar": {
+        "display": "grid",
+        "items": 5,
+        "minH": 56,
+        "height": 57,
+        "current": "tabMore",
+        "shellPad": 140
+      },
+      "kpi": {
+        "count": 4,
+        "columns": 2,
+        "overflow": false,
+        "truncated": false
+      },
+      "contrast": [],
+      "liveRows": 7,
+      "liveCardsStacked": true,
+      "drawerOpen": true,
+      "drawerRoutes": 6,
+      "drawerTargetMin": 44
+    }
+  ],
+  "sweep": [
+    {
+      "width": 320,
+      "route": "ask",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "answer",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "chat",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "chains",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "assets",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "plant",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "docs",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 320,
+      "route": "tests",
+      "scrollWidth": 320,
+      "clientWidth": 320,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "ask",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "answer",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "chat",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "chains",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "assets",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "plant",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "docs",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 360,
+      "route": "tests",
+      "scrollWidth": 360,
+      "clientWidth": 360,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "ask",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "answer",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "chat",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "chains",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "assets",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "plant",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "docs",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 414,
+      "route": "tests",
+      "scrollWidth": 414,
+      "clientWidth": 414,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "ask",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "answer",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "chat",
+      "scrollWidth": 480,
+      "clientWidth": 480,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "chains",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "assets",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "plant",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "docs",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 480,
+      "route": "tests",
+      "scrollWidth": 465,
+      "clientWidth": 465,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "ask",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "answer",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "chat",
+      "scrollWidth": 600,
+      "clientWidth": 600,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "chains",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "assets",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "plant",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "docs",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 600,
+      "route": "tests",
+      "scrollWidth": 585,
+      "clientWidth": 585,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "ask",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "answer",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "chat",
+      "scrollWidth": 700,
+      "clientWidth": 700,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "chains",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "assets",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "plant",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "docs",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 700,
+      "route": "tests",
+      "scrollWidth": 685,
+      "clientWidth": 685,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "ask",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "answer",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "chat",
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "chains",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "assets",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "plant",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "docs",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 760,
+      "route": "tests",
+      "scrollWidth": 745,
+      "clientWidth": 745,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "ask",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "answer",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "chat",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "chains",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "assets",
+      "scrollWidth": 761,
+      "clientWidth": 761,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "plant",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "docs",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 761,
+      "route": "tests",
+      "scrollWidth": 746,
+      "clientWidth": 746,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "ask",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "answer",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "chat",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "chains",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "assets",
+      "scrollWidth": 900,
+      "clientWidth": 900,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "plant",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "docs",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 900,
+      "route": "tests",
+      "scrollWidth": 885,
+      "clientWidth": 885,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "ask",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "answer",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "chat",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "chains",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "assets",
+      "scrollWidth": 1080,
+      "clientWidth": 1080,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "plant",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "docs",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "route": "tests",
+      "scrollWidth": 1065,
+      "clientWidth": 1065,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "ask",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "answer",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "chat",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "chains",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "assets",
+      "scrollWidth": 1081,
+      "clientWidth": 1081,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "plant",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "docs",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1081,
+      "route": "tests",
+      "scrollWidth": 1066,
+      "clientWidth": 1066,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "ask",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "answer",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "chat",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "chains",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "assets",
+      "scrollWidth": 1200,
+      "clientWidth": 1200,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "plant",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "docs",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1200,
+      "route": "tests",
+      "scrollWidth": 1185,
+      "clientWidth": 1185,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "ask",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "answer",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "chat",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "chains",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "assets",
+      "scrollWidth": 1600,
+      "clientWidth": 1600,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "plant",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "docs",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1600,
+      "route": "tests",
+      "scrollWidth": 1585,
+      "clientWidth": 1585,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "ask",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "answer",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "chat",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "chains",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "chain/CH-GA-1201A-01",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "asset/GA-1201A",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "assets",
+      "scrollWidth": 1920,
+      "clientWidth": 1920,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "plant",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "docs",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    },
+    {
+      "width": 1920,
+      "route": "tests",
+      "scrollWidth": 1905,
+      "clientWidth": 1905,
+      "ok": true
+    }
+  ],
+  "acceptance": {
+    "fold": {
+      "scrollY": 0,
+      "pillBottom": 429,
+      "headlineBottom": 539,
+      "safetyFirst": true,
+      "tabTop": 610
+    },
+    "reach": {
+      "tabs": [
+        "#ask",
+        "#assets",
+        "#chains",
+        "#plant"
+      ],
+      "drawer": [
+        "#ask",
+        "#assets",
+        "#chains",
+        "#plant",
+        "#docs",
+        "#tests"
+      ],
+      "moreOpensDrawer": true
+    },
+    "darkContrast": [
+      {
+        "width": 1440,
+        "route": "ask",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "answer",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "chat",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "chains",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "chain/CH-GA-1201A-01",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "asset/GA-1201A",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "assets",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "plant",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "docs",
+        "offenders": 0
+      },
+      {
+        "width": 1440,
+        "route": "tests",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "ask",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "answer",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "chat",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "chains",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "chain/CH-GA-1201A-01",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "asset/GA-1201A",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "assets",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "plant",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "docs",
+        "offenders": 0
+      },
+      {
+        "width": 375,
+        "route": "tests",
+        "offenders": 0
+      }
+    ],
+    "fab": [
+      {
+        "theme": "light",
+        "width": 1440,
+        "route": "ask",
+        "w": 56,
+        "h": 56,
+        "radius": "50%",
+        "right": 20,
+        "bottom": 20,
+        "aboveTabbar": null,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "light",
+        "width": 1440,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "light",
+        "width": 1024,
+        "route": "ask",
+        "w": 56,
+        "h": 56,
+        "radius": "50%",
+        "right": 20,
+        "bottom": 20,
+        "aboveTabbar": null,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "light",
+        "width": 1024,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "light",
+        "width": 768,
+        "route": "ask",
+        "w": 56,
+        "h": 56,
+        "radius": "50%",
+        "right": 20,
+        "bottom": 20,
+        "aboveTabbar": null,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "light",
+        "width": 768,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "light",
+        "width": 430,
+        "route": "ask",
+        "w": 52,
+        "h": 52,
+        "radius": "50%",
+        "right": 16,
+        "bottom": 72,
+        "aboveTabbar": true,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "light",
+        "width": 430,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "light",
+        "width": 390,
+        "route": "ask",
+        "w": 52,
+        "h": 52,
+        "radius": "50%",
+        "right": 16,
+        "bottom": 72,
+        "aboveTabbar": true,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "light",
+        "width": 390,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "light",
+        "width": 375,
+        "route": "ask",
+        "w": 52,
+        "h": 52,
+        "radius": "50%",
+        "right": 16,
+        "bottom": 72,
+        "aboveTabbar": true,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "light",
+        "width": 375,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "route": "ask",
+        "w": 56,
+        "h": 56,
+        "radius": "50%",
+        "right": 20,
+        "bottom": 20,
+        "aboveTabbar": null,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "dark",
+        "width": 1024,
+        "route": "ask",
+        "w": 56,
+        "h": 56,
+        "radius": "50%",
+        "right": 20,
+        "bottom": 20,
+        "aboveTabbar": null,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "dark",
+        "width": 1024,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "dark",
+        "width": 768,
+        "route": "ask",
+        "w": 56,
+        "h": 56,
+        "radius": "50%",
+        "right": 20,
+        "bottom": 20,
+        "aboveTabbar": null,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "dark",
+        "width": 768,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "dark",
+        "width": 430,
+        "route": "ask",
+        "w": 52,
+        "h": 52,
+        "radius": "50%",
+        "right": 16,
+        "bottom": 72,
+        "aboveTabbar": true,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "dark",
+        "width": 430,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "dark",
+        "width": 390,
+        "route": "ask",
+        "w": 52,
+        "h": 52,
+        "radius": "50%",
+        "right": 16,
+        "bottom": 72,
+        "aboveTabbar": true,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "dark",
+        "width": 390,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      },
+      {
+        "theme": "dark",
+        "width": 375,
+        "route": "ask",
+        "w": 52,
+        "h": 52,
+        "radius": "50%",
+        "right": 16,
+        "bottom": 72,
+        "aboveTabbar": true,
+        "onTop": true,
+        "covered": [],
+        "contrast": 12.11,
+        "label": "Open chat",
+        "overflow": 0,
+        "opens": true,
+        "returns": true
+      },
+      {
+        "theme": "dark",
+        "width": 375,
+        "route": "glossary+pid",
+        "helpShowsOrientation": true,
+        "fromHelp": true,
+        "fromSidebar": true,
+        "topbarButtons": 0,
+        "pidOverlap": false
+      }
+    ],
+    "home": [
+      {
+        "theme": "light",
+        "width": 1440,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 326,
+          "pat": 326,
+          "side": true,
+          "patBeforeGo": false
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "light",
+        "width": 1024,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 369,
+          "pat": 369,
+          "side": true,
+          "patBeforeGo": false
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "light",
+        "width": 768,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 326,
+          "pat": 301,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "light",
+        "width": 430,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 341,
+          "pat": 343,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "light",
+        "width": 390,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 369,
+          "pat": 343,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "light",
+        "width": 375,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 369,
+          "pat": 343,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "light",
+        "width": 320,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 384,
+          "pat": 387,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 326,
+          "pat": 326,
+          "side": true,
+          "patBeforeGo": false
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "dark",
+        "width": 1024,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 369,
+          "pat": 369,
+          "side": true,
+          "patBeforeGo": false
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "dark",
+        "width": 768,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 326,
+          "pat": 301,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "dark",
+        "width": 430,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 341,
+          "pat": 343,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "dark",
+        "width": 390,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 369,
+          "pat": 343,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "dark",
+        "width": 375,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 369,
+          "pat": 343,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      },
+      {
+        "theme": "dark",
+        "width": 320,
+        "baselineSpread": 0,
+        "cards": {
+          "go": 384,
+          "pat": 387,
+          "side": false,
+          "patBeforeGo": true
+        },
+        "overflow": 0
+      }
+    ]
+  },
+  "assets": [
+    {
+      "tag": "GA-1201A",
+      "alt": "Representative image of Hexane Feed Pump",
+      "caption": "Representative image — Hexane Feed Pump",
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Hexane Feed Pump",
+          "caption": "Representative image — Hexane Feed Pump"
+        }
+      ],
+      "layoutShift": 0.002,
+      "overflow": 0
+    },
+    {
+      "tag": "YD-2301",
+      "alt": "Representative image of Polymer Fluid Bed Dryer",
+      "caption": "Representative image — Polymer Fluid Bed Dryer",
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Polymer Fluid Bed Dryer",
+          "caption": "Representative image — Polymer Fluid Bed Dryer"
+        }
+      ],
+      "layoutShift": 0.002,
+      "overflow": 0
+    },
+    {
+      "tag": "DC-3401A",
+      "alt": "Representative image of Catalyst Reduction Reactor",
+      "caption": "Representative image — Catalyst Reduction Reactor",
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Catalyst Reduction Reactor",
+          "caption": "Representative image — Catalyst Reduction Reactor"
+        }
+      ],
+      "layoutShift": 0.001,
+      "overflow": 0
+    },
+    {
+      "tag": "KC-4501",
+      "alt": "Representative image of Recycle Gas Compressor",
+      "caption": "Representative image — Recycle Gas Compressor",
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Recycle Gas Compressor",
+          "caption": "Representative image — Recycle Gas Compressor"
+        }
+      ],
+      "layoutShift": 0.002,
+      "overflow": 0
+    },
+    {
+      "tag": "EA-5601",
+      "alt": "Representative image of Solvent Heater",
+      "caption": "Representative image — Solvent Heater",
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Solvent Heater",
+          "caption": "Representative image — Solvent Heater"
+        }
+      ],
+      "layoutShift": 0.002,
+      "overflow": 0
+    },
+    {
+      "tag": "LV-6701",
+      "alt": "Representative image of Separator Level Control Valve",
+      "caption": "Representative image — Separator Level Control Valve",
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Separator Level Control Valve",
+          "caption": "Representative image — Separator Level Control Valve"
+        }
+      ],
+      "layoutShift": 0.001,
+      "overflow": 0
+    },
+    {
+      "tag": "CT-7801",
+      "alt": "Representative image of Cooling Tower Cell Fan",
+      "caption": "Representative image — Cooling Tower Cell Fan",
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Cooling Tower Cell Fan",
+          "caption": "Representative image — Cooling Tower Cell Fan"
+        }
+      ],
+      "layoutShift": 0.001,
+      "overflow": 0
+    },
+    {
+      "tag": "FA-8901",
+      "alt": "Representative image of Reflux Accumulator Drum",
+      "caption": "Representative image — Reflux Accumulator Drum",
+      "photos": [
+        {
+          "src": "header",
+          "loaded": true,
+          "natural": 640,
+          "rendered": 198,
+          "frameW": 200,
+          "frameH": 150,
+          "sharp": true,
+          "attrs": true,
+          "cover": true,
+          "filtered": false,
+          "overlay": false,
+          "alt": "Representative image of Reflux Accumulator Drum",
+          "caption": "Representative image — Reflux Accumulator Drum"
+        }
+      ],
+      "layoutShift": 0.002,
+      "overflow": 0
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "target": "D:\\Downloads\\CALLIBER\\calliber meeting\\cascade\\web\\dist\\cascade.html",
+  "html_bytes": 2848864,
+  "html_sha256": "37ae9e2a743ab16911cf398115264a5944e708110bb2a65b1d800c952c698c93",
+  "engine_commit": "0fbef8b",
+  "source_hashes": {
+    "bundle": "b691e2cd0615dafbce157b69ccf59f9a75cf1f2382c18dddc214c388e5ebc10e",
+    "engine": "2651b580bce672119effda7af3b54aa59d6cd309f7339bc4701d0f3460c7e7ce",
+    "piddata": "77785dcb09360f584a8dab57bb33c0720504d0cabbf0416cace972d32298f7b3",
+    "photodata": "4f24c186f710797ba245081dfce0551098b4303c558747fb897b37186d719883",
+    "app": "e0b59cbb159e2644be4f93556120e360bc201487fa0828c9719bf2bd3b104c29"
+  },
+  "photos": [
+    {
+      "key": "hero",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "decoded_bytes": 266798,
+      "embedded_base64_bytes": 355732,
+      "sha256": "225aad146cabc6e8106ba65dc01092bd6d28ef67561d6ec6fccdf2daf0ae6629"
+    },
+    {
+      "key": "PUMP",
+      "dimensions": [
+        132,
+        99
+      ],
+      "decoded_bytes": 2386,
+      "embedded_base64_bytes": 3184,
+      "sha256": "5262f2a724773d6043411212c80ef0aac0141115df9db079ed7eac208f055df3"
+    },
+    {
+      "key": "DRYER",
+      "dimensions": [
+        132,
+        99
+      ],
+      "decoded_bytes": 1942,
+      "embedded_base64_bytes": 2592,
+      "sha256": "652eed88aa989baca11cbe3623f626de2b190e557106eb7e9eda4373fa170af0"
+    },
+    {
+      "key": "REACTOR",
+      "dimensions": [
+        132,
+        99
+      ],
+      "decoded_bytes": 2322,
+      "embedded_base64_bytes": 3096,
+      "sha256": "d78ba6adb05e3906c3b60c1b462fb35454e9e6d2365e7139de73e85e220cda9e"
+    },
+    {
+      "key": "COMPRESSOR",
+      "dimensions": [
+        132,
+        99
+      ],
+      "decoded_bytes": 2646,
+      "embedded_base64_bytes": 3528,
+      "sha256": "3aa6da29b46b9e83c450f9e1e90823456672946fad3f163399e5e8b5a4718d98"
+    },
+    {
+      "key": "HEATER",
+      "dimensions": [
+        132,
+        99
+      ],
+      "decoded_bytes": 2300,
+      "embedded_base64_bytes": 3068,
+      "sha256": "b24f4579f1c19d79707fb5796392e04000f34b352c768120ce0fac4284facf4c"
+    },
+    {
+      "key": "VALVE",
+      "dimensions": [
+        132,
+        99
+      ],
+      "decoded_bytes": 2576,
+      "embedded_base64_bytes": 3436,
+      "sha256": "61bba9adba4ecf8d44072903f3ecdeb039977761de802b0d6a086d69fef33bf4"
+    },
+    {
+      "key": "FAN",
+      "dimensions": [
+        132,
+        99
+      ],
+      "decoded_bytes": 2032,
+      "embedded_base64_bytes": 2712,
+      "sha256": "76e7fbeb978b2d4ead53a2900d766394651f680d2e24a573a3a1907bb7884ed2"
+    },
+    {
+      "key": "DRUM",
+      "dimensions": [
+        132,
+        99
+      ],
+      "decoded_bytes": 2088,
+      "embedded_base64_bytes": 2784,
+      "sha256": "a18b939b7c0bf787048100035375b9f3037e7fd6c588a185e0093960dc956c3e"
+    }
+  ],
+  "pids": [
+    {
+      "key": "GA-1201A",
+      "decoded_bytes": 122542,
+      "embedded_base64_bytes": 163392
+    },
+    {
+      "key": "YD-2301",
+      "decoded_bytes": 146808,
+      "embedded_base64_bytes": 195744
+    },
+    {
+      "key": "DC-3401A",
+      "decoded_bytes": 196180,
+      "embedded_base64_bytes": 261576
+    },
+    {
+      "key": "KC-4501",
+      "decoded_bytes": 190594,
+      "embedded_base64_bytes": 254128
+    },
+    {
+      "key": "EA-5601",
+      "decoded_bytes": 177058,
+      "embedded_base64_bytes": 236080
+    },
+    {
+      "key": "LV-6701",
+      "decoded_bytes": 139500,
+      "embedded_base64_bytes": 186000
+    },
+    {
+      "key": "CT-7801",
+      "decoded_bytes": 239286,
+      "embedded_base64_bytes": 319048
+    },
+    {
+      "key": "FA-8901",
+      "decoded_bytes": 206892,
+      "embedded_base64_bytes": 275856
+    }
+  ],
+  "size_breakdown": {
+    "photo_decoded_bytes": 285090,
+    "photo_embedded_base64_bytes": 380132,
+    "pid_decoded_bytes": 1418860,
+    "pid_embedded_base64_bytes": 1891824,
+    "remaining_html_bytes": 576908,
+    "cap_10000000_margin_bytes": 7151136,
+    "cap_10mib_margin_bytes": 7636896
+  },
+  "checks": {
+    "source_embeddings_exact": true,
+    "default_theme_light": true,
+    "photo_webp_and_dimensions": true
+  },
+  "preservation": {
+    "piddata_exact": true,
+    "photodata_exact": true,
+    "existing_css_exact_after_removing_tldr_addition": true,
+    "theme_code_exact": true,
+    "previous_piddata_sha256": "77785dcb09360f584a8dab57bb33c0720504d0cabbf0416cace972d32298f7b3",
+    "previous_photodata_sha256": "4f24c186f710797ba245081dfce0551098b4303c558747fb897b37186d719883",
+    "previous_theme_sha256": "4ec5f47a08b42c7e5befe33044ce789c12b5e95ea32e356aac528ec94c7deb6c",
+    "current_theme_sha256": "4ec5f47a08b42c7e5befe33044ce789c12b5e95ea32e356aac528ec94c7deb6c"
+  }
+}

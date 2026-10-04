@@ -1,0 +1,10 @@
+{
+  "name": "cascade-web-tests",
+  "private": true,
+  "scripts": {
+    "test": "node test_ui.js && node test_chat.js && node test_clarify.js && node test_lookup.js"
+  },
+  "devDependencies": {
+    "jsdom": "^27.0.0"
+  }
+}

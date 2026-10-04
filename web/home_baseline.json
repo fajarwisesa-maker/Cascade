@@ -1,0 +1,94 @@
+{
+ "_note": "Captured from the build before the Home section fix (commit 92bdb64). The audit checks that the redesigned section shows the same figures and link destinations.",
+ "tiles": {
+  "home.tile.assets": {
+   "value": "8",
+   "caption": "2 with approved documents",
+   "href": "#assets"
+  },
+  "home.tile.chains": {
+   "value": "6",
+   "caption": "reconstructed from work orders",
+   "href": "#chains"
+  },
+  "home.tile.events": {
+   "value": "15",
+   "caption": "work orders joined into chains",
+   "href": "#chains"
+  },
+  "home.tile.downtime": {
+   "value": "96.5 h",
+   "caption": "inside those chains",
+   "href": "#plant"
+  },
+  "home.tile.cost": {
+   "value": "Rp 114.69 jt",
+   "caption": "inside those chains",
+   "href": "#plant"
+  },
+  "home.tile.docs": {
+   "value": "18",
+   "caption": "226 searchable passages",
+   "href": "#docs"
+  },
+  "home.tile.loc": {
+   "value": "1",
+   "caption": "chain flagged",
+   "href": "#chains"
+  },
+  "home.tile.mech": {
+   "value": "5",
+   "caption": "the same failure mode across units",
+   "href": "#plant"
+  }
+ },
+ "go": [
+  {
+   "href": "#assets",
+   "count": "8"
+  },
+  {
+   "href": "#chains",
+   "count": "6"
+  },
+  {
+   "href": "#plant",
+   "count": null
+  },
+  {
+   "href": "#docs",
+   "count": "18"
+  },
+  {
+   "href": "#tests",
+   "count": null
+  }
+ ],
+ "chips": [
+  {
+   "text": "EA-5601",
+   "href": "#asset/EA-5601"
+  },
+  {
+   "text": "FA-8901",
+   "href": "#asset/FA-8901"
+  },
+  {
+   "text": "GA-1201A",
+   "href": "#asset/GA-1201A"
+  },
+  {
+   "text": "KC-4501",
+   "href": "#asset/KC-4501"
+  },
+  {
+   "text": "YD-2301",
+   "href": "#asset/YD-2301"
+  }
+ ],
+ "callout": {
+  "title": "Polymer fines fouling",
+  "body": "Appears on 5 of 8 assets, across 5 chains and 11 linked events. Not an isolated asset problem.",
+  "cta": "#plant"
+ }
+}

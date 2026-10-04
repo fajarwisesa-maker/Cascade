@@ -1,0 +1,51 @@
+
+Q: GA-1201A tripped on high vibration, can I restart?
+   asset=GA-1201A (tag GA-1201A named in question) | intent=TRIP_RESTART | safety=YES ['trip / shutdown', 'restart / reset'] | status=ANSWERED | 10 ms
+
+>> Do not restart GA-1201A until the trip cause is cleared and every start permissive is true. Steps below are verbatim from approved documents.
+
+  [Interlock SEQ-1201 (SIL 1) — cause & effect]
+   • T3 · Bearing vibration HIGH-HIGH · VSHH-1201 · set point > 7.1 mm/s RMS · vote 1oo2  [E1] ✓verbatim
+   •    → EFF-1: TRIP PUMP MOTOR GA-1201A  [E1] ✓verbatim
+   •    → EFF-2: CLOSE DISCHARGE XV-1201  [E1] ✓verbatim
+   •    → EFF-4: ANNUNCIATE ALARM ON DCS  [E1] ✓verbatim
+   •    → EFF-5: START STANDBY PUMP GA-1201B (auto)  [E1] ✓verbatim
+   • A trip is latched and requires a manual reset once the cause has cleared and permissives are healthy.  [E2] ✓verbatim
+   • Document caveat: Trip set points are DUMMY training values.  [E3] ✓verbatim
+
+  [Restart only when ALL start permissives are true (AND gate)]
+   • 1. Suction valve OPEN — ZSO-1201  [E4] ✓verbatim
+   • 2. Seal flush established (dP > 1.5 bar) — PDI-1201  [E4] ✓verbatim
+   • 3. Min-flow valve OPEN — ZSO-1202  [E4] ✓verbatim
+   • 4. No active trip / reset done — DCS reset  [E4] ✓verbatim
+
+  [Approved recovery check (verbatim)]  — OPL-GA-1201A-07 · Improvement · approved by Arya Wibisono (EMP-0912) · shared 2026-04-15 · interlock SEQ-1201 (SIL 1) · P&ID TJC-LLD-PID-1201
+   • 1. Record VT-1201 on the daily PdM route in mm/s RMS  | check: Loop isolated / under permit  [E5] ✓verbatim
+   • 2. Note alarm at 4.5 mm/s and trip at 7.1 mm/s (VSHH-1201)  | check: Reference standard traceable  [E5] ✓verbatim
+   • 3. A rise greater than 1 mm/s within a week = plan a bearing inspection  | check: As-found & as-left recorded  [E5] ✓verbatim
+   • 4. Correlate the vibration rise with TI-1201 bearing temperature  | check: Trip / control action verified  [E5] ✓verbatim
+   • 5. Escalate to reliability engineer if the 1x running-speed component dominates  | check: Return to service confirmed  [E5] ✓verbatim
+
+  [Previous VSHH-1201 trips on GA-1201A]
+   • 2025-02-23 · WO-240003 · GA-1201A tripped on VSHH-1201 high vibration 7.4 mm/s — root cause: Angular misalignment 0.12 mm/100mm after foundation settlement  [E6]
+   • WO-240003 opened chain CH-GA-1201A-01 (misalignment): 4 linked failures followed. Treat a repeat trip as a possible continuation of that chain, not a new event.  [E6, E7]
+
+  [Not verified by CASCADE — confirm in the field]
+   • Current process values (no live historian / DCS connection in this pilot)
+   • Status of each start permissive signal in the field
+   • That the cause of THIS trip has been found and cleared (interlock is latched)
+   • Active permits and isolations
+
+  Evidence:
+   E1   INTERLOCK  TJC-LLD-IL-GA-1201A Rev 3 — SEQ-1201 (SIL 1) · C&E row T3 · revision=3, sil=SIL 1
+   E2   INTERLOCK  TJC-LLD-IL-GA-1201A Rev 3 — SEQ-1201 (SIL 1) · NOTES · revision=3, sil=SIL 1
+   E3   INTERLOCK  TJC-LLD-IL-GA-1201A Rev 3 — SEQ-1201 (SIL 1) · NOTES · revision=3, sil=SIL 1
+   E4   INTERLOCK  TJC-LLD-IL-GA-1201A Rev 3 — SEQ-1201 (SIL 1) · START PERMISSIVE (AND-gate) · revision=3, sil=SIL 1
+   E5   OPL        OPL-GA-1201A-07 — Vibration Trend Monitoring & Alarm Response (VSHH-1201) · 4. DETAILED PROCEDURE / STEPS, p1 · classification=Improvement, date_shared=2026-04-15, approved_by=Arya Wibisono (EMP-0912)
+   E6   WORK_ORDER WO-240003 (2025-02-23, Corrective) · Maintenance History (CMMS export) · date=2025-02-23
+   E7   CHAIN      CH-GA-1201A-01 (CASCADE chain detector) · 4 linked work orders
+
+  Confidence: Medium (75)  Source authority 0.9 · Asset match 1.0 · Evidence coverage 1.0 · Corroboration 1.0 · Intent coverage 1.0
+   cap: Capped at 75: no live process data in this pilot (read-only historian not connected)
+  Verification: verbatim 16/16 · grounding 2/2 · removed 0
+  Escalate to: Shift supervisor (acknowledgement before acting); reliability engineer if the 1x running-speed component dominates (OPL-GA-1201A-07 step 5) — safety-critical: trip / shutdown, restart / reset
